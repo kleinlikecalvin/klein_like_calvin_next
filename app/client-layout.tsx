@@ -23,10 +23,10 @@ export default function ClientLayout({
     <html lang="en">
       <main
         className={clsx(`${merriweather} Arial antialiased bg-white`, {
-          "bg-black": !isLightMode,
+          dark: !isLightMode,
         })}
       >
-        <Nav setIsLightMode={setIsLightMode} />
+        <Nav setIsLightMode={setIsLightMode} isLightMode={isLightMode} />
         {children}
       </main>
     </html>
