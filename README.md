@@ -18,6 +18,8 @@ Nikki Klein | Software Engineer | Portfolio
 
 ## Overview
 
+WIP
+
 ## My process
 
 ### Built with

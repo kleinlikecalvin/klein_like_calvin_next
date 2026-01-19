@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
-import "../../styles/components/landing/_GreetingWriter.scss";
+"use client";
+
+import { useState, useEffect } from "react";
 
 const GREETINGS = [
   "Hello World, my name is",
@@ -35,7 +36,7 @@ export default function GreetingWriter() {
   }, [currentGreetingIndex]);
 
   return (
-    <h2 className="GreetingWriter">
+    <h2 className="GreetingWriter text-[35px] leading-10">
       <span>{displayedText}</span>
       <span className="blink">|</span>
     </h2>

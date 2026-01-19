@@ -1,11 +1,10 @@
-import Blurb from "./components/landing/Blurb.js";
-import ProjectOverview from "./components/landing/ProjectOverview.js";
-import Contact from "./components/landing/Contact.js";
+import Blurb from "./components/landing/Blurb";
 
 export default function LandingPage() {
   return (
-    <div className="LandingPage">
-      {/* <Blurb />
+    <div className="LandingPage grid gap-12.5">
+      <Blurb />
+      {/* 
       <ProjectOverview />
       <Contact /> */}
     </div>

@@ -23,3 +23,16 @@
   --color-accent-one: #9ab418;
   --color-accent-two: #c26c0a;
 }
+
+h2,
+h3 {
+  margin: 10px auto;
+  font-family: var(--font-headers);
+  font-weight: 900;
+}
+h2 {
+  color: var(--color-special-one);
+}
+h3 {
+  color: var(--color-special-two);
+}
