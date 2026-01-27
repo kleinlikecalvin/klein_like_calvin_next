@@ -22,6 +22,7 @@ export default function ClientLayout({
   return (
     <html lang="en">
       <main
+        // TODO: is adding the classes here correct and/or necessary?
         className={clsx(`${merriweather} Arial antialiased bg-white`, {
           dark: !isLightMode,
         })}
