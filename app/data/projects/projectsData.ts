@@ -8,3 +8,4 @@ export const projectsData: Project[] = [
   pythonSlotMachine,
   numberGamble,
 ];
+// TODO sort these by year so the newest ones are always displayed
