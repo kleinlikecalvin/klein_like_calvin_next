@@ -29,7 +29,7 @@ export default function NavMenu() {
           "menu flex items-center justify-center gap-2.5 p-0 m-0",
           {
             hidden: showMobileMenu,
-          }
+          },
         )}
       >
         {navData.map(({ id, link, displayValue }: Link) => {
