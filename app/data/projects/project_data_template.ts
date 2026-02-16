@@ -25,7 +25,7 @@ export const projectName: Project = {
     url: "",
     duration: "",
     achievements: [""],
-    responsibilities: [""],
+    position: "",
     callouts: [""],
     gitHubRepoUrl: "",
   },

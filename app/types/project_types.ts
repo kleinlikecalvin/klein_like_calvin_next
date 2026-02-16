@@ -24,7 +24,7 @@ type ProjectPage = {
   };
   duration: string;
   achievements: string[];
-  responsibilities: string[];
+  position: string;
   callouts: string[];
   gitHubRepoUrl: string;
 };

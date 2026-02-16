@@ -25,7 +25,7 @@ export const haTurnToReviews: Project = {
     url: "",
     duration: "",
     achievements: [""],
-    responsibilities: [""],
+    position: "Software Engineer",
     callouts: [""],
     gitHubRepoUrl: "",
   },

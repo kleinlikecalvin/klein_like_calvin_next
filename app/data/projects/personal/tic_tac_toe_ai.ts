@@ -25,7 +25,7 @@ export const ticTacToeAI: Project = {
     url: "",
     duration: "",
     achievements: [""],
-    responsibilities: [""],
+    position: "",
     callouts: [""],
     gitHubRepoUrl: "",
   },

@@ -28,7 +28,7 @@ export const memoryGame: Project = {
       "Designed a simple, responsive UI and focused on how the game feels to play, ensuring that interactions were intuitive and transitions made sense.",
       "Treated this project as an opportunity to grow — both in React fundamentals and in more advanced patterns like reducers — while turning an interview challenge into a polished, functioning game.",
     ],
-    responsibilities: ["Junior Front End Software Engineer"],
+    position: "Junior Front End Software Engineer",
     callouts: [
       "Huge thank you to Cash App for the opportunity to interview, it's stuck with me ever since.",
     ],

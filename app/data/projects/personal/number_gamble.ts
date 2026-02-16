@@ -25,9 +25,9 @@ export const numberGamble: Project = {
   },
   page: {
     url: "/number-gamble-game",
-    duration: "",
-    achievements: [""],
-    responsibilities: [""],
+    duration: "1 day",
+    achievements: ["Practiced handling promises"],
+    position: "Freelance Front End Web Developer",
     callouts: [
       "Special thanks to Thu Nghiem for their awesome youtube tutorial on promises!",
     ],

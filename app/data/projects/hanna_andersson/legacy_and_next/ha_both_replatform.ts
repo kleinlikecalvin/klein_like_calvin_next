@@ -25,7 +25,7 @@ export const haReplatform: Project = {
     url: "",
     duration: "",
     achievements: [""],
-    responsibilities: [""],
+    position: "",
     callouts: [""],
     gitHubRepoUrl: "",
   },

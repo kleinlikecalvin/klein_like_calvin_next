@@ -21,7 +21,7 @@ export const templatesSuiteData: Project = {
     url: "/templates-suite",
     duration: "",
     achievements: [],
-    responsibilities: [""],
+    position: "",
     callouts: [],
     gitHubRepoUrl: "",
   },
