@@ -7,15 +7,17 @@ export default function ProjectOverviewCard({ project }: { project: Project }) {
       href={project.page.url}
       className="ProjectOverviewCard rounded-[20px] p-half bg-background text-foreground"
     >
-      <div className="image-container max-h-50 overflow-hidden border-b-special-one border-b">
-        <Image
-          className="w-full h-auto m-0 mx-auto"
-          src={project.preview.thumbnail.src}
-          alt={project.preview.thumbnail.alt}
-          height={project.preview.thumbnail.height}
-          width={project.preview.thumbnail.width}
-        />
-      </div>
+      {project.preview.thumbnail.src && (
+        <div className="image-container max-h-50 overflow-hidden border-b-special-one border-b">
+          <Image
+            className="w-full h-auto m-0 mx-auto"
+            src={project.preview.thumbnail.src}
+            alt={project.preview.thumbnail.alt}
+            height={project.preview.thumbnail.height}
+            width={project.preview.thumbnail.width}
+          />
+        </div>
+      )}
       <div className="info pb-half border-b border-b-special-one">
         <div className="skills">
           <p className="special">skills</p>

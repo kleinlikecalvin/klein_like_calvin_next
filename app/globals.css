@@ -65,8 +65,9 @@
   }
 }
 
-.multi-color-container {
-  transition: box-shadow 0.5s ease;
-  padding: 10px;
-  overflow: hidden;
+@layer components {
+  .multi-color-container {
+    transition: box-shadow 0.5s ease;
+    padding: 10px;
+  }
 }
