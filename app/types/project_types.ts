@@ -1,5 +1,7 @@
 // Projects
 
+import { StaticImageData } from "next/image";
+
 type Resource = {
   displayValue: string;
   url: string;
@@ -10,11 +12,8 @@ type ProjectPreview = {
   thumbnail: { src: string; alt: string; height: number; width: number };
 };
 
-type Image = {
-  src: string;
+type Image = StaticImageData & {
   alt: string;
-  height: number;
-  width: number;
 };
 
 type ProjectPage = {
@@ -33,7 +32,7 @@ type ProjectPage = {
 export type Project = {
   id: string;
   title: string;
-  year: string;
+  year: number;
   role: string;
   skills: string[];
   resources?: Resource[];

@@ -34,10 +34,7 @@ export default function NavMenu() {
       >
         {navData.map(({ id, link, displayValue }: Link) => {
           return (
-            <li
-              key={id}
-              className="link-item transition-transform duration-300 ease-in-out p-2.5 hover:scale-[1.1]"
-            >
+            <li key={id} className="link-item p-2.5">
               <a href={link} className="link text-background">
                 {displayValue}
               </a>

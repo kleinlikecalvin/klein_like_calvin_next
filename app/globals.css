@@ -12,6 +12,10 @@
   --color-special-two: #0b62c8;
   --color-accent-one: #3d93f5;
   --color-accent-two: #654be7;
+
+  /* PADDING */
+  --padding-full: calc(var(--spacing) * 10);
+  --padding-half: calc(var(--spacing) * 5);
 }
 
 .dark {
@@ -24,15 +28,45 @@
   --color-accent-two: #c26c0a;
 }
 
-h2,
-h3 {
-  margin: 10px auto;
-  font-family: var(--font-headers);
-  font-weight: 900;
+@layer base {
+  h2,
+  h3,
+  .special {
+    margin: 10px auto;
+    font-family: var(--font-headers);
+    font-weight: 900;
+  }
+
+  h2 {
+    color: var(--color-special-one);
+  }
+
+  h3,
+  .special {
+    color: var(--color-special-two);
+  }
+
+  a {
+    text-decoration: none;
+    display: block;
+  }
+
+  a,
+  button {
+    border-radius: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    background-color: var(--color-special-one);
+    color: var(--color-background);
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
 }
-h2 {
-  color: var(--color-special-one);
-}
-h3 {
-  color: var(--color-special-two);
+
+.multi-color-container {
+  transition: box-shadow 0.5s ease;
+  padding: 10px;
+  overflow: hidden;
 }

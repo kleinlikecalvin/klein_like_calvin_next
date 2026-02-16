@@ -4,7 +4,7 @@ import numberGambleStep1 from "../../../images/projects/personal/number_gamble/s
 export const numberGamble: Project = {
   id: "numberGamble",
   title: "Number Gamble Game",
-  year: "2022",
+  year: 2022,
   role: "Junior Front End Developer",
   skills: ["Javascript, HTML"],
   resources: [
@@ -17,7 +17,7 @@ export const numberGamble: Project = {
     blurb:
       "Built a number-guessing game to strengthen my understanding of Promises and async/await, guided by an excellent tutorial from Thu Nghiem.",
     thumbnail: {
-      src: numberGambleStep1,
+      src: numberGambleStep1.src,
       alt: "Number Gamble game thumbnail",
       height: 962,
       width: 440,
@@ -35,7 +35,7 @@ export const numberGamble: Project = {
   },
   images: [
     {
-      src: numberGambleStep1,
+      src: numberGambleStep1.src,
       alt: "Number gamble game - step 1",
       height: 962,
       width: 440,

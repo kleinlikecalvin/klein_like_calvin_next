@@ -1,11 +1,16 @@
-import { Project } from "../../types/project_types.ts";
-import { memoryGame } from "./personal/memory_game.ts";
-import { pythonSlotMachine } from "./personal/python_terminal_slot_machine.ts";
-import { numberGamble } from "./personal/number_gamble.ts";
+import { Project } from "../../types/project_types";
+import { memoryGame } from "./personal/memory_game";
+import { pythonSlotMachine } from "./personal/python_terminal_slot_machine";
+import { numberGamble } from "./personal/number_gamble";
+import { haReplatform } from "./hanna_andersson/legacy_and_next/ha_both_replatform";
+import { haTurnToReviews } from "./hanna_andersson/next/ha_next_turnto_reviews_api";
+import { ticTacToeAI } from "./personal/tic_tac_toe_ai";
 
 export const projectsData: Project[] = [
   memoryGame,
   pythonSlotMachine,
   numberGamble,
-];
-// TODO sort these by year so the newest ones are always displayed
+  haReplatform,
+  haTurnToReviews,
+  ticTacToeAI,
+].sort((a, b) => b.year - a.year);

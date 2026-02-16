@@ -5,7 +5,7 @@ import memoryBeastMode from "../../../images/projects/personal/memory_game/memor
 export const memoryGame: Project = {
   id: "memoryGame",
   title: "CashApp Interview Challenge - Memory Game",
-  year: "2023",
+  year: 2023,
   role: "Junior Front End Software Engineer",
   skills: ["Javascript, CSS, HTML"],
   resources: [],
@@ -13,10 +13,10 @@ export const memoryGame: Project = {
     blurb:
       "A React-based memory card game inspired by a Cash App interview challenge, using a reducer pattern to manage complex, event-driven game state. The project features card flipping, matching logic, and a clean, responsive UI designed to deliver a smooth and engaging gameplay experience.",
     thumbnail: {
-      src: memoryDefault,
+      src: memoryDefault.src,
       alt: "Memory Game",
-      height: 0,
-      width: 0,
+      height: 604,
+      width: 460,
     },
   },
   page: {
@@ -37,16 +37,16 @@ export const memoryGame: Project = {
   },
   images: [
     {
-      src: memoryDefault,
-      alt: "Memory Game default game play",
-      height: 0,
-      width: 0,
+      src: memoryDefault.src,
+      alt: "Memory Game: default game play",
+      height: 604,
+      width: 460,
     },
     {
-      src: memoryBeastMode,
-      alt: "Memory Game beast mode game play",
-      height: 0,
-      width: 0,
+      src: memoryBeastMode.src,
+      alt: "Memory Game: beast mode game play",
+      height: 604,
+      width: 460,
     },
   ],
 };

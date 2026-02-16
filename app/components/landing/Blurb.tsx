@@ -4,7 +4,7 @@ import GreetingWriter from "./GreetingWriter";
 export default function Blurb() {
   return (
     <MultiColorContainer>
-      <section className="Blurb bg-background rounded-[30px] m-0 mx-auto p-5 grid gap-5 grid-cols-[1fr_3px_1fr] max-lg:flex max-lg:flex-wrap">
+      <section className="Blurb bg-background rounded-[30px] m-0 mx-auto p-half grid gap-5 grid-cols-[1fr_3px_1fr] max-lg:flex max-lg:flex-wrap">
         <div className="greeting-container">
           <GreetingWriter />
           <h3 className="text-5xl">Nikki Klein</h3>

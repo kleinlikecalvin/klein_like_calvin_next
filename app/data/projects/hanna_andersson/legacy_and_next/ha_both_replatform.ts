@@ -1,6 +1,6 @@
 import { Project } from "@/app/types/project_types";
 
-export const projectName: Project = {
+export const haReplatform: Project = {
   id: "",
   title: "",
   year: 0,

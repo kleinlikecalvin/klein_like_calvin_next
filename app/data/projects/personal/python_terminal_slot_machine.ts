@@ -4,7 +4,7 @@ import winnerScreenShot from "../../../images/projects/personal/python_terminal_
 export const pythonSlotMachine: Project = {
   id: "pythonSlotMachine",
   title: "Python Slot Machine Game",
-  year: "2025",
+  year: 2025,
   role: "Software Engineer",
   skills: ["Python"],
   resources: [
@@ -33,7 +33,7 @@ export const pythonSlotMachine: Project = {
     blurb:
       "A Vegas-style slot machine game in 100% Python, complete with ASCII art messages and interactive terminal gameplay. It handles betting, spins, payouts, and real-time balance tracking to deliver a fun, retro casino experience that celebrates every win.",
     thumbnail: {
-      src: winnerScreenShot,
+      src: winnerScreenShot.src,
       alt: "Screenshot of slot machine winning spin",
       height: 1164,
       width: 2024,
@@ -58,7 +58,7 @@ export const pythonSlotMachine: Project = {
   },
   images: [
     {
-      src: winnerScreenShot,
+      src: winnerScreenShot.src,
       alt: "Screen shot of winner UX from game play",
       height: 962,
       width: 440,

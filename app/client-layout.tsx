@@ -20,16 +20,14 @@ export default function ClientLayout({
   const [isLightMode, setIsLightMode] = useState(true);
 
   return (
-    <html lang="en">
-      <main
-        // TODO: is adding the classes here correct and/or necessary?
-        className={clsx(`${merriweather} Arial antialiased bg-white`, {
-          dark: !isLightMode,
-        })}
-      >
-        <Nav setIsLightMode={setIsLightMode} isLightMode={isLightMode} />
-        {children}
-      </main>
-    </html>
+    <main
+      // TODO: is adding the classes here correct and/or necessary?
+      className={clsx(`${merriweather} Arial antialiased`, {
+        dark: !isLightMode,
+      })}
+    >
+      <Nav setIsLightMode={setIsLightMode} isLightMode={isLightMode} />
+      {children}
+    </main>
   );
 }
