@@ -1,10 +1,10 @@
 import { Project } from "@/app/types/project_types";
 
 export const haTurnToReviews: Project = {
-  id: "",
+  id: "haTurnToReviews",
   title: "",
-  year: 2025,
-  role: "",
+  year: "2025",
+  role: "Full Stack Software Engineer",
   skills: [""],
   resources: [
     {
@@ -25,7 +25,6 @@ export const haTurnToReviews: Project = {
     url: "",
     duration: "",
     achievements: [""],
-    position: "Software Engineer",
     callouts: [""],
     gitHubRepoUrl: "",
   },

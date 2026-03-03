@@ -1,14 +1,19 @@
-import { Project } from "../../../types/project_types";
-import memoryDefault from "../../../images/projects/personal/memory_game/memory_game_default.png";
-import memoryBeastMode from "../../../images/projects/personal/memory_game/memory_game_beast_mode.png";
+import { Project } from "@/app/types/project_types";
+import memoryDefault from "@/public/images/projects/personal/memory_game/memory_game_default.png";
+import memoryBeastMode from "@/public/images/projects/personal/memory_game/memory_game_beast_mode.png";
 
 export const memoryGame: Project = {
   id: "memoryGame",
   title: "CashApp Interview Challenge - Memory Game",
-  year: 2023,
+  year: "2023",
   role: "Junior Front End Software Engineer",
-  skills: ["Javascript, CSS, HTML"],
-  resources: [],
+  skills: ["React, Javascript, CSS, HTML"],
+  resources: [
+    {
+      displayValue: "Nathan Walston",
+      url: "https://github.com/walston",
+    },
+  ],
   preview: {
     blurb:
       "A React-based memory card game inspired by a Cash App interview challenge, using a reducer pattern to manage complex, event-driven game state. The project features card flipping, matching logic, and a clean, responsive UI designed to deliver a smooth and engaging gameplay experience.",
@@ -28,7 +33,6 @@ export const memoryGame: Project = {
       "Designed a simple, responsive UI and focused on how the game feels to play, ensuring that interactions were intuitive and transitions made sense.",
       "Treated this project as an opportunity to grow — both in React fundamentals and in more advanced patterns like reducers — while turning an interview challenge into a polished, functioning game.",
     ],
-    position: "Junior Front End Software Engineer",
     callouts: [
       "Huge thank you to Cash App for the opportunity to interview, it's stuck with me ever since.",
     ],

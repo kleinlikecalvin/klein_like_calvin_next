@@ -1,9 +1,9 @@
 import { Project } from "@/app/types/project_types";
 
 export const ticTacToeAI: Project = {
-  id: "",
+  id: "ticTacToeAI",
   title: "",
-  year: 2023,
+  year: "2023",
   role: "",
   skills: [""],
   resources: [
@@ -25,7 +25,6 @@ export const ticTacToeAI: Project = {
     url: "",
     duration: "",
     achievements: [""],
-    position: "",
     callouts: [""],
     gitHubRepoUrl: "",
   },

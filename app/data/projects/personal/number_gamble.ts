@@ -1,11 +1,11 @@
-import { Project } from "../../../types/project_types";
-import numberGambleStep1 from "../../../images/projects/personal/number_gamble/step_1.png";
+import { Project } from "@/app/types/project_types";
+import numberGambleStep1 from "@/public/images/projects/personal/number_gamble/step_1.png";
 
 export const numberGamble: Project = {
   id: "numberGamble",
   title: "Number Gamble Game",
-  year: 2022,
-  role: "Junior Front End Developer",
+  year: "2022",
+  role: "Freelance Front End Web Developer",
   skills: ["Javascript, HTML"],
   resources: [
     {
@@ -26,8 +26,7 @@ export const numberGamble: Project = {
   page: {
     url: "/number-gamble-game",
     duration: "1 day",
-    achievements: ["Practiced handling promises"],
-    position: "Freelance Front End Web Developer",
+    achievements: ["Practiced handling promises."],
     callouts: [
       "Special thanks to Thu Nghiem for their awesome youtube tutorial on promises!",
     ],

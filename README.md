@@ -1,6 +1,6 @@
 # klein_like_calvin_react
 
-Nikki Klein | Software Engineer | Portfolio
+Nikki Klein | Full Stack Software Engineer | Portfolio
 
 ## Table of contents
 

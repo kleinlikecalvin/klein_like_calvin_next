@@ -1,11 +1,11 @@
-import { Project } from "../../../types/project_types";
-import winnerScreenShot from "../../../images/projects/personal/python_terminal_slot_machine/winner.png";
+import { Project } from "@/app/types/project_types";
+import winnerScreenShot from "@/public/images/projects/personal/python_terminal_slot_machine/winner.png";
 
 export const pythonSlotMachine: Project = {
   id: "pythonSlotMachine",
   title: "Python Slot Machine Game",
-  year: 2025,
-  role: "Software Engineer",
+  year: "2025",
+  role: "Full Stack Software Engineer",
   skills: ["Python"],
   resources: [
     {
@@ -52,7 +52,6 @@ export const pythonSlotMachine: Project = {
       "Organized code into reusable, readable functions, showing mastery of clean-code principles.",
       "Debugged and iterated on the game to ensure smooth play, reflecting strong problem-solving and resilience for a beginner.",
     ],
-    position: "Software Engineer",
     callouts: [],
     gitHubRepoUrl: "https://github.com/kleinlikecalvin/python_p1--slot-machine",
   },

@@ -1,4 +1,4 @@
-import { Project } from "../../types/project_types";
+import { Project } from "@/app/types/project_types";
 import { memoryGame } from "./personal/memory_game";
 import { pythonSlotMachine } from "./personal/python_terminal_slot_machine";
 import { numberGamble } from "./personal/number_gamble";
@@ -13,4 +13,4 @@ export const projectsData: Project[] = [
   haReplatform,
   haTurnToReviews,
   ticTacToeAI,
-].sort((a, b) => b.year - a.year);
+].sort((a, b) => Number(b.year) - Number(a.year));

@@ -1,9 +1,9 @@
-import { Project } from "../../../../types/project_types";
+import { Project } from "@/app/types/project_types";
 
 export const templatesSuiteData: Project = {
   id: "templatesSuite",
   title: "UI Templates Suite With Documentation",
-  year: 2022,
+  year: "2022",
   role: "Junior Front End Developer",
   skills: ["Javascript, HTML, CSS"],
   resources: [],
@@ -21,7 +21,6 @@ export const templatesSuiteData: Project = {
     url: "/templates-suite",
     duration: "",
     achievements: [],
-    position: "",
     callouts: [],
     gitHubRepoUrl: "",
   },

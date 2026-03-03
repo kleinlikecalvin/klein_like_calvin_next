@@ -3,7 +3,7 @@ import { Project } from "@/app/types/project_types";
 export const projectName: Project = {
   id: "",
   title: "",
-  year: 0,
+  year: "",
   role: "",
   skills: [""],
   resources: [
@@ -25,7 +25,6 @@ export const projectName: Project = {
     url: "",
     duration: "",
     achievements: [""],
-    position: "",
     callouts: [""],
     gitHubRepoUrl: "",
   },

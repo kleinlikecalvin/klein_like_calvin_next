@@ -24,7 +24,6 @@ type ProjectPage = {
   };
   duration: string;
   achievements: string[];
-  position: string;
   callouts: string[];
   gitHubRepoUrl: string;
 };
@@ -32,7 +31,7 @@ type ProjectPage = {
 export type Project = {
   id: string;
   title: string;
-  year: number;
+  year: string;
   role: string;
   skills: string[];
   resources?: Resource[];
