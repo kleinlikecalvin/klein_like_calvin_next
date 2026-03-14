@@ -7,9 +7,8 @@ export const haReplatform: Project = {
   year: "2026", // 🚨 TODO: update either when leaving Hanna or when completely on SOTF
   role: "Full Stack Software Engineer",
   skills: [
-    "React, Redux, Next.js, Tailwind, Vitest, Vercel, Fastly, Grafana, Checkly, APIs, LogRocket, GTM, GA, Javascript, CSS, HTML, shadcn",
+    "React, Redux, Next.js, Tailwind, Typescript, Vitest, Vercel, Fastly, Grafana, Checkly, APIs, BFFs, Tech Design/Architecture, LogRocket, GTM, GA, Javascript, CSS, HTML, shadcn, SFCC, Stripe",
   ],
-  resources: [],
   preview: {
     blurb:
       "Key contributor in replatforming a legacy SFCC e-commerce site to a modern, headless Next.js architecture using a strangler pattern for incremental, low-risk rollout.",
@@ -37,7 +36,6 @@ export const haReplatform: Project = {
     callouts: [
       "An ongoing huge thank you to our Principal Engineer, Derek Dorr, who oversaw the project and is an endless well of wisdom and guidance. Working with you was a pivotal period for me.",
     ],
-    gitHubRepoUrl: "",
   },
   images: [
     {

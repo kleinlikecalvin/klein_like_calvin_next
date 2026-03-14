@@ -24,8 +24,8 @@ type ProjectPage = {
   };
   duration: string;
   achievements: string[];
-  callouts: string[];
-  gitHubRepoUrl: string;
+  callouts?: string[];
+  gitHubRepoUrl?: string;
 };
 
 export type Project = {
