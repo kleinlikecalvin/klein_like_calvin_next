@@ -39,7 +39,7 @@ export const haTurnToReviews: Project = {
   },
   page: {
     url: "/ha-turnto-reviews",
-    duration: "1 month",
+    duration: "~6 weeks",
     achievements: [
       "Identified a critical gap in project planning and independently developed the full tech design.",
       "Architected and implemented a custom TurnTo Reviews API integration from scratch, replacing their out-of-the-box widget with a fully bespoke solution.",
