@@ -9,7 +9,7 @@ export const navData: Link[] = [
   {
     id: "projects",
     displayValue: "all projects",
-    link: "",
+    link: "/all-projects",
   },
   {
     id: "skills",

@@ -8,7 +8,7 @@ export default function ProjectOverviewCard({ project }: { project: Project }) {
       className="ProjectOverviewCard rounded-[20px] p-half bg-background text-foreground"
     >
       {project.preview.thumbnail.src && (
-        <div className="image-container max-h-50 overflow-hidden border-b-special-one border-b">
+        <div className="image-container h-50 overflow-hidden border-b-special-one border-b">
           <Image
             className="w-full h-auto m-0 mx-auto"
             src={project.preview.thumbnail.src}
@@ -18,7 +18,7 @@ export default function ProjectOverviewCard({ project }: { project: Project }) {
           />
         </div>
       )}
-      <div className="info pb-half border-b border-b-special-one">
+      <div className="info h-65 pb-half border-b border-b-special-one">
         <div className="skills">
           <p className="special">skills</p>
           {project.skills.map((skill) => {
@@ -34,7 +34,7 @@ export default function ProjectOverviewCard({ project }: { project: Project }) {
           <p className="blurb">{project.preview.blurb}</p>
         </div>
       </div>
-      <div className="stats flex gap-5 items-start justify-evenly text-center">
+      <div className="stats h-20 flex gap-5 items-start justify-evenly text-center">
         <div className="year stat">
           <p className="special">year</p>
           <p className="text-sm">{project.year}</p>

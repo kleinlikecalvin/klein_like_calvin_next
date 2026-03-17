@@ -7,7 +7,7 @@ export const ticTacToeAI: Project = {
   id: "ticTacToeAI",
   title: "Tic Tac Toe AI",
   year: "2023",
-  role: "Junior Front End Developer",
+  role: "Junior Front End Software Engineer",
   skills: ["Typescript, React, CSS, HTML"],
   preview: {
     blurb:

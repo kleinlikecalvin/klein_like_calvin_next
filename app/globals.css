@@ -16,6 +16,7 @@
   /* PADDING */
   --padding-full: calc(var(--spacing) * 10);
   --padding-half: calc(var(--spacing) * 5);
+  --padding-quarter: calc(var(--spacing) * 2.5);
 }
 
 .dark {
@@ -46,18 +47,21 @@
     color: var(--color-special-two);
   }
 
-  a {
-    text-decoration: none;
-    display: block;
-  }
-
   a,
   button {
-    border-radius: 20px;
-    padding: 20px;
-    transition: transform 0.3s ease;
+    text-decoration: none;
+    display: block;
     background-color: var(--color-special-one);
     color: var(--color-background);
+    border-radius: 20px;
+    padding: 20px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .scale {
+    transition: transform 0.3s ease;
     &:hover {
       cursor: pointer;
       transform: scale(1.1);

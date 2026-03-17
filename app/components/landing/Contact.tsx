@@ -12,7 +12,7 @@ export default function Contact() {
             return (
               <a
                 href={obj.url}
-                className="button-link w-37.5"
+                className="button-link w-37.5 scale"
                 target="_blank"
                 rel="noreferrer noopener"
                 key={obj.displayValue}

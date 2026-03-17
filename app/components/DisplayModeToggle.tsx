@@ -17,6 +17,7 @@ export default function DisplayModeToggle() {
     setTheme("system");
   }
 
+  // TODO: Can't tab to the display mode toggle
   return (
     <div className="DisplayModeToggle flex items-center [&>p]:p-2.5">
       <p>light</p>

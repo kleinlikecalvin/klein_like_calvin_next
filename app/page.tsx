@@ -4,7 +4,7 @@ import Contact from "./components/landing/Contact";
 
 export default function LandingPage() {
   return (
-    <main className="LandingPage grid gap-12.5">
+    <main className="LandingPage grid gap-12.5 max-lg:mx-10">
       <Blurb />
       <ProjectOverview />
       <Contact />
