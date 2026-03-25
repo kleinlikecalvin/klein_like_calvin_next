@@ -40,8 +40,6 @@ export const pythonSlotMachine: Project = {
     },
   },
   page: {
-    url: "/python-slot-machine",
-    duration: "9 hours",
     achievements: [
       "Built a complete, interactive game using only Python — demonstrating rapid learning, self-direction, and the ability to turn an idea into a working product.",
       "Implemented real game logic, including betting, spinning, winning conditions, and payouts, showing a solid grasp of control flow, functions, and program structure.",

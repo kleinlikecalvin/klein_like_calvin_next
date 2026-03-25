@@ -25,8 +25,6 @@ export const memoryGame: Project = {
     },
   },
   page: {
-    url: "/memory-game",
-    duration: "6 hours",
     achievements: [
       "Taking an interview prompt from Cash App, I rebuilt the memory game on my own time and used it as a way to deepen my understanding of state management in React.",
       "Implemented shuffling logic, card-flipping behavior, and match detection while managing all gameplay transitions with a reducer pattern, allowing me to practice structuring complex, event-driven state in a clean, scalable way.",

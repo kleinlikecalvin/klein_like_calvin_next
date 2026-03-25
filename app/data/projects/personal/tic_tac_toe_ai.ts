@@ -20,8 +20,6 @@ export const ticTacToeAI: Project = {
     },
   },
   page: {
-    url: "/tic-tac-toe-ai",
-    duration: "~20hrs",
     achievements: [
       "Built a fully playable Tic-Tac-Toe game using React and TypeScript",
       "Implemented game state management with useReducer and a custom useAppState hook",

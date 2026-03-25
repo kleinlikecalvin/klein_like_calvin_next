@@ -6,7 +6,7 @@ export default function Contact() {
     <MultiColorContainer>
       <section className="Contact bg-background rounded-[30px] p-half text-center">
         <h2 className="text-[35px] font-black">Let's be friends!</h2>
-        <hr className="w-full h-0.75 bg-accent-one" />
+        <hr className="w-full h-0.75 bg-special-one" />
         <div className="links-container flex justify-center items-center gap-5 p-5">
           {contactInfoData.map((obj) => {
             return (

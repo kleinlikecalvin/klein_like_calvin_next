@@ -17,12 +17,6 @@ type Image = StaticImageData & {
 };
 
 type ProjectPage = {
-  url: string;
-  images?: {
-    landingBanner: string;
-    mobile: string[];
-  };
-  duration: string;
   achievements: string[];
   callouts?: string[];
   gitHubRepoUrl?: string;

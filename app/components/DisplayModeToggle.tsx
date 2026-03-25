@@ -17,13 +17,12 @@ export default function DisplayModeToggle() {
     setTheme("system");
   }
 
-  // TODO: Can't tab to the display mode toggle
   return (
     <div className="DisplayModeToggle flex items-center [&>p]:p-2.5">
       <p>light</p>
       <label className="relative inline-block w-12.5 h-6.5">
         <input
-          className="toggle hidden peer"
+          className="toggle peer opacity-0"
           type="checkbox"
           defaultValue={theme}
           onClick={handleDisplayModeToggleClick}

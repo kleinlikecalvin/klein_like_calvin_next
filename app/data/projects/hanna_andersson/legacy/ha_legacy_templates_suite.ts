@@ -18,8 +18,6 @@ export const templatesSuiteData: Project = {
     },
   },
   page: {
-    url: "/templates-suite",
-    duration: "",
     achievements: [],
     callouts: [],
     gitHubRepoUrl: "",

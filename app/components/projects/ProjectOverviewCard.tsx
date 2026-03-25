@@ -1,11 +1,17 @@
 import { Project } from "@/app/types/project_types";
 import Image from "next/image";
 
-export default function ProjectOverviewCard({ project }: { project: Project }) {
+export default function ProjectOverviewCard({
+  project,
+  classes,
+}: {
+  project: Project;
+  classes?: string;
+}) {
   return (
     <a
-      href={project.page.url}
-      className="ProjectOverviewCard rounded-[20px] p-half bg-background text-foreground"
+      href={`/project?id=${project.id}`}
+      className={`ProjectOverviewCard rounded-[20px] p-half bg-background text-foreground scale ${classes}`}
     >
       {project.preview.thumbnail.src && (
         <div className="image-container h-50 overflow-hidden border-b-special-one border-b">

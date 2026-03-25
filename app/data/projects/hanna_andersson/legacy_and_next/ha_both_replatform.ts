@@ -20,8 +20,6 @@ export const haReplatform: Project = {
     },
   },
   page: {
-    url: "/ha-replatform",
-    duration: "2+ years",
     achievements: [
       "Led front-end architectural decisions, introduced unit testing strategies, and drove tech debt remediation to reduce regressions and improve maintainability.",
       "Designed and built high-performance, accessible UI components with React, Next.js, Tailwind, Redux, and BFF services, deployed via Vercel.",

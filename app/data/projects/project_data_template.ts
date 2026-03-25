@@ -22,8 +22,6 @@ export const projectName: Project = {
     },
   },
   page: {
-    url: "",
-    duration: "",
     achievements: [""],
     callouts: [""],
     gitHubRepoUrl: "",

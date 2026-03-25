@@ -6,9 +6,11 @@ export default function AllProjects() {
     <main className="AllProjects grid grid-cols-1 lg:grid-cols-2 gap-10">
       {projectsData.map((project) => {
         return (
-          <div className="border border-accent-one">
-            <ProjectOverviewCard project={project} key={project.id} />
-          </div>
+          <ProjectOverviewCard
+            project={project}
+            classes="border border-accent-one"
+            key={project.id}
+          />
         );
       })}
     </main>
