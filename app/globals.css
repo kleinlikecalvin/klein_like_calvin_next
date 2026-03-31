@@ -25,11 +25,12 @@
   --color-foreground: #fffdfa;
   --color-special-one: #cce64b;
   --color-special-two: #f49d37;
-  --color-accent-one: #9ab418;
-  --color-accent-two: #c26c0a;
+  --color-accent-one: #c26c0a;
+  --color-accent-two: #9ab418;
 }
 
 @layer base {
+  h1,
   h2,
   h3,
   .special {
@@ -38,6 +39,7 @@
     font-weight: 900;
   }
 
+  h1,
   h2 {
     color: var(--color-special-one);
   }
