@@ -15,8 +15,8 @@ export const haReplatform: Project = {
     thumbnail: {
       src: pdpScreenShot.src,
       alt: "Screen shot of Hanna Andersson PDP on new tech stack",
-      height: 728,
-      width: 1119,
+      height: 1278,
+      width: 1945,
     },
   },
   page: {
@@ -34,13 +34,17 @@ export const haReplatform: Project = {
     callouts: [
       "An ongoing huge thank you to our Principal Engineer, Derek Dorr, who oversaw the project and is an endless well of wisdom and guidance. Working with you was a pivotal period for me.",
     ],
+    livePage: {
+      url: "https://www.hannaandersson.com/",
+      displayText: "Visit Hanna Andersson Site",
+    },
   },
   images: [
     {
       src: pdpScreenShot.src,
       alt: "Screen shot of Hanna Andersson PDP on new tech stack",
-      height: 728,
-      width: 1119,
+      height: 1278,
+      width: 1945,
     },
   ],
 };
