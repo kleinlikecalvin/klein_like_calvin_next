@@ -22,7 +22,7 @@ export default function DisplayModeToggle() {
       <p>light</p>
       <label className="relative inline-block w-12.5 h-6.5">
         <input
-          className="toggle peer opacity-0"
+          className="toggle peer w-full h-full"
           type="checkbox"
           defaultValue={theme}
           onClick={handleDisplayModeToggleClick}
