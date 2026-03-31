@@ -19,7 +19,7 @@ type Image = StaticImageData & {
 type ProjectPage = {
   achievements: string[];
   callouts?: string[];
-  gitHubRepoUrl?: string;
+  livePage: { url: string; displayText: string };
 };
 
 export type Project = {

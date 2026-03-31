@@ -24,7 +24,10 @@ export const projectName: Project = {
   page: {
     achievements: [""],
     callouts: [""],
-    gitHubRepoUrl: "",
+    livePage: {
+      url: "",
+      displayText: "",
+    },
   },
   images: [
     {

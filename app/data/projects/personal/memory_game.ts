@@ -34,8 +34,10 @@ export const memoryGame: Project = {
     callouts: [
       "Huge thank you to Cash App for the opportunity to interview, it's stuck with me ever since.",
     ],
-    gitHubRepoUrl:
-      "https://github.com/kleinlikecalvin/memory-game-interview-challenge",
+    livePage: {
+      url: "https://github.com/kleinlikecalvin/memory-game-interview-challenge",
+      displayText: "See repo and play the game",
+    },
   },
   images: [
     {

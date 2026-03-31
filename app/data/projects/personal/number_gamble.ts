@@ -28,7 +28,10 @@ export const numberGamble: Project = {
     callouts: [
       "Special thanks to Thu Nghiem for their awesome youtube tutorial on promises!",
     ],
-    gitHubRepoUrl: "https://github.com/kleinlikecalvin/numberGamble",
+    livePage: {
+      url: "https://github.com/kleinlikecalvin/numberGamble",
+      displayText: "Visit repo and play the game",
+    },
   },
   images: [
     {

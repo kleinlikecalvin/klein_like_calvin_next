@@ -32,7 +32,10 @@ export const ticTacToeAI: Project = {
     callouts: [
       "Thanks for my mentor, Nate Walston, for helping me figure out how to create an opponent to play against",
     ],
-    gitHubRepoUrl: "https://github.com/kleinlikecalvin/tic-tac-toe",
+    livePage: {
+      url: "https://github.com/kleinlikecalvin/tic-tac-toe",
+      displayText: "Visit repo and play the game",
+    },
   },
   images: [
     {

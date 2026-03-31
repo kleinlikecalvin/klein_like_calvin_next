@@ -50,6 +50,10 @@ export const haTurnToReviews: Project = {
       "Built a reusable image display modal triggered consistently across all review image interactions throughout the entire experience.",
       "Delivered the entire feature — from architecture through production — as a solo effort, with zero bugs reported since launch.",
     ],
+    livePage: {
+      url: "https://www.hannaandersson.com/product/67501-011#TT-Reviews-Container",
+      displayText: "See Hanna Andersson PDP Reviews Section",
+    },
   },
   images: [
     {

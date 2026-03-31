@@ -50,7 +50,10 @@ export const pythonSlotMachine: Project = {
       "Organized code into reusable, readable functions, showing mastery of clean-code principles.",
       "Debugged and iterated on the game to ensure smooth play, reflecting strong problem-solving and resilience for a beginner.",
     ],
-    gitHubRepoUrl: "https://github.com/kleinlikecalvin/python_p1--slot-machine",
+    livePage: {
+      url: "https://github.com/kleinlikecalvin/python_p1--slot-machine",
+      displayText: "Visit repo",
+    },
   },
   images: [
     {

@@ -20,7 +20,10 @@ export const templatesSuiteData: Project = {
   page: {
     achievements: [],
     callouts: [],
-    gitHubRepoUrl: "",
+    livePage: {
+      url: "",
+      displayText: "",
+    },
   },
   //   images: [
   //     {
