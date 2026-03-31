@@ -12,7 +12,7 @@ export default function ProjectOverview() {
       {projectsData.length > 2 && (
         <a
           href="/all-projects"
-          className="mt-11 text-lg font-medium text-center hover:bg-background border-2 hover:text-special-one"
+          className="mt-11 text-lg font-medium text-center w-max mx-auto hover:bg-background border-2 hover:text-special-one"
         >
           more projects
         </a>
