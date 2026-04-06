@@ -2,6 +2,11 @@
 
 import { useSearchParams } from "next/navigation";
 import { projectsData } from "../data/projects/projectsData";
+import MultiColorContainer from "../components/MultiColorContainer";
+import Skills from "../components/projects/Skills";
+import Image from "next/image";
+import { Image as ImageType } from "../types/project_types";
+import Divider from "../components/Divider";
 
 export default function Project() {
   const searchParams = useSearchParams();
@@ -11,63 +16,92 @@ export default function Project() {
   // TODO: Not found UI
   if (!project) return;
 
+  const { title, year, role, images, skills, resources, page, preview } =
+    project;
+
   return (
     <main className="Project flex flex-col gap-10">
       <section className="header flex justify-between">
         <div className="details">
-          <h1 className="title text-4xl">{project.title}</h1>
+          <h1 className="title">{title}</h1>
           <p className="year-role">
-            <span>{project.year}</span> | <span>{project.role}</span>
+            <span>{year}</span>
+            <Divider />
+            <span>{role}</span>
           </p>
         </div>
-        <a
-          href={project.page.livePage.url}
-          className="live-page w-max h-max scale"
-        >
-          {project.page.livePage.displayText}
+        <a href={page.livePage.url} className="live-page w-max h-max scale">
+          {page.livePage.displayText}
         </a>
       </section>
-      <p className="blurb">
-        <span className="special">TLDR: </span>
-        {project.preview.blurb}
-      </p>
-      {project.images && (
-        <img src={project.images[0].src} alt={project.images[0].alt} />
+      <MultiColorContainer>
+        <p className="blurb multi-color-child">
+          <span className="special">TLDR: </span>
+          {preview.blurb}
+        </p>
+      </MultiColorContainer>
+      {images && (
+        <Image
+          src={images[0].src}
+          alt={images[0].alt}
+          height={images[0].height}
+          width={images[0].width}
+          className="w-auto h-full max-h-125 m-auto"
+        />
       )}
-      <ul className="achievements">
-        {project.page.achievements.map((achievement, i) => (
-          <li key={i}>{achievement}</li>
-        ))}
-      </ul>
-      <ul className="skills">
-        {project.skills.map((skill, i) => (
-          <li key={i}>{skill}</li>
-        ))}
-      </ul>
-      {project.images && project.images.length > 1 && (
+      <MultiColorContainer>
+        <section className="skills multi-color-child flex items-center gap-4">
+          <h3>Skills</h3>
+          <Skills skills={skills} />
+        </section>
+      </MultiColorContainer>
+      <section>
+        <h3>Achievements</h3>
+        <ul className="achievements list-inside list-disc">
+          {page.achievements.map((achievement, i) => (
+            <li key={i} className="py-1">
+              {achievement}
+            </li>
+          ))}
+        </ul>
+      </section>
+      {images && images.length > 1 && (
         <ul className="images-carousel">
-          {project.images.map((image) => (
-            <li className="image">
-              <img src={image.src} alt={image.alt} />
+          {images.map((image: ImageType, i: number) => (
+            <li className="image" key={i}>
+              <Image
+                src={image.src}
+                alt={image.alt}
+                height={images[0].height}
+                width={images[0].width}
+              />
             </li>
           ))}
         </ul>
       )}
-      {!!project.resources && (
-        <div className="resources">
-          {project.resources.map((resource, i) => (
-            <p key={i}>
-              <a href={resource.url}>{resource.displayValue}</a>
-            </p>
-          ))}
-        </div>
+      {!!page.callouts && (
+        <MultiColorContainer>
+          <section className="callouts multi-color-child">
+            <h3>Callouts</h3>
+            <ul className="list-inside list-disc">
+              {page.callouts.map((callout, i) => (
+                <li key={i} className="py-1">
+                  {callout}
+                </li>
+              ))}
+            </ul>
+          </section>
+        </MultiColorContainer>
       )}
-      {!!project.page.callouts && (
-        <ul className="callouts">
-          {project.page.callouts.map((callout, i) => (
-            <li key={i}>{callout}</li>
+      {!!resources && (
+        <section className="resources">
+          <h3>Resources</h3>
+          {resources.map((resource, i) => (
+            <a href={resource.url} className="w-max inline-block" key={i}>
+              {resource.displayValue}
+            </a>
           ))}
-        </ul>
+        </section>
       )}
     </main>
   );
