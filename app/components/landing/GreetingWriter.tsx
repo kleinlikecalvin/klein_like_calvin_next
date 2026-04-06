@@ -27,7 +27,7 @@ export default function GreetingWriter() {
       } else {
         setDisplayedText("");
         setCurrentGreetingIndex(
-          (prevIndex) => (prevIndex + 1) % GREETINGS.length
+          (prevIndex) => (prevIndex + 1) % GREETINGS.length,
         );
       }
     }, SPEED);
@@ -36,9 +36,9 @@ export default function GreetingWriter() {
   }, [currentGreetingIndex]);
 
   return (
-    <h2 className="GreetingWriter text-[35px] leading-10">
+    <span className="GreetingWriter block">
       <span>{displayedText}</span>
       <span className="blink">|</span>
-    </h2>
+    </span>
   );
 }

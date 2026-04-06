@@ -2,12 +2,12 @@ import { contactInfoData } from "../../data/landing/contact_info";
 import MultiColorContainer from "../MultiColorContainer";
 
 export default function Contact() {
+  // TODO: figure out styling, The HR was bugging me but I also don't like the header free floating by itself
   return (
     <MultiColorContainer>
-      <section className="Contact bg-background rounded-[30px] p-half text-center">
-        <h2 className="text-[35px] font-black">Let's be friends!</h2>
-        <hr className="w-full h-0.75 bg-special-one" />
-        <div className="links-container flex justify-center items-center gap-5 p-5">
+      <section className="Contact multi-color-child">
+        <h2>Follow me</h2>
+        <div className="links-container flex justify-center items-center gap-5 p-5 text-center">
           {contactInfoData.map((obj) => {
             return (
               <a
