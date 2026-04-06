@@ -17,5 +17,5 @@ export const navData: Link[] = [
     link: "/#skills",
   },
 ];
-
+// TODO: where does skills link take user?
 export default navData;
