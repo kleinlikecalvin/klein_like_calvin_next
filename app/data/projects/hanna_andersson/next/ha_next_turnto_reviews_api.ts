@@ -16,7 +16,7 @@ export const haTurnToReviews: Project = {
   title: "TurnTo Reviews API",
   year: "2025",
   role: "Full Stack Software Engineer",
-  skills: ["React, Next.js, Redux, Typescript, Tailwind, API"],
+  skills: ["React", "Next.js", "Redux", "Typescript", "Tailwind", "API"],
   resources: [
     {
       displayValue: "TurnTo Review API Documentation",

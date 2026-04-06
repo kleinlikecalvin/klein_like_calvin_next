@@ -8,7 +8,7 @@ export const ticTacToeAI: Project = {
   title: "Tic Tac Toe AI",
   year: "2023",
   role: "Junior Front End Software Engineer",
-  skills: ["Typescript, React, CSS, HTML"],
+  skills: ["Typescript", "React", "CSS", "HTML"],
   preview: {
     blurb:
       "A browser-based Tic-Tac-Toe game built with React, TypeScript, and useReducer, featuring an AI opponent that blocks player wins and pursues its own — falling back to random play when no immediate threat or opportunity exists.",
@@ -21,16 +21,16 @@ export const ticTacToeAI: Project = {
   },
   page: {
     achievements: [
-      "Built a fully playable Tic-Tac-Toe game using React and TypeScript",
-      "Implemented game state management with useReducer and a custom useAppState hook",
-      "Developed an AI opponent with greedy move selection — prioritizing winning moves, then blocking the player, then playing randomly",
-      "Highlighted winning squares on game end using derived state from the reducer",
-      "Handled draw detection and dynamic UI messaging based on game state",
-      "Simulated opponent 'thinking' with a 500ms async delay using a Promise-based wait utility",
-      "Enforced turn-based access control by disabling the board during the opponent's turn and after game over",
+      "Built a fully playable Tic-Tac-Toe game using React and TypeScript.",
+      "Implemented game state management with useReducer and a custom useAppState hook.",
+      "Developed an AI opponent with greedy move selection — prioritizing winning moves, then blocking the player, then playing randomly.",
+      "Highlighted winning squares on game end using derived state from the reducer.",
+      "Handled draw detection and dynamic UI messaging based on game state.",
+      "Simulated opponent 'thinking' with a 500ms async delay using a Promise-based wait utility.",
+      "Enforced turn-based access control by disabling the board during the opponent's turn and after game over.",
     ],
     callouts: [
-      "Thanks for my mentor, Nate Walston, for helping me figure out how to create an opponent to play against",
+      "Thanks to Nate Walston for helping me figure out how to create an opponent to play against.",
     ],
     livePage: {
       url: "https://github.com/kleinlikecalvin/tic-tac-toe",

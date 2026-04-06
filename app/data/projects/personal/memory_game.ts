@@ -7,7 +7,7 @@ export const memoryGame: Project = {
   title: "CashApp Interview Challenge - Memory Game",
   year: "2023",
   role: "Junior Front End Software Engineer",
-  skills: ["React, Javascript, CSS, HTML"],
+  skills: ["React", "Javascript", "CSS", "HTML"],
   resources: [
     {
       displayValue: "Nathan Walston",

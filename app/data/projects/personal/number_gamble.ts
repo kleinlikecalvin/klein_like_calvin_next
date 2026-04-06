@@ -6,7 +6,7 @@ export const numberGamble: Project = {
   title: "Number Gamble Game",
   year: "2022",
   role: "Freelance Front End Web Developer",
-  skills: ["Javascript, HTML"],
+  skills: ["Javascript", "HTML"],
   resources: [
     {
       displayValue: "Youtube",

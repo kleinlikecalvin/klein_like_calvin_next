@@ -7,11 +7,32 @@ export const haReplatform: Project = {
   year: "2026", // 🚨 TODO: update either when leaving Hanna or when completely on SOTF
   role: "Full Stack Software Engineer",
   skills: [
-    "React, Redux, Next.js, Tailwind, Typescript, Vitest, Vercel, Fastly, Grafana, Checkly, APIs, BFFs, Tech Design/Architecture, LogRocket, GTM, GA, Javascript, CSS, HTML, shadcn, SFCC, Stripe",
+    "React",
+    "Redux",
+    "Next.js",
+    "Tailwind",
+    "Typescript",
+    "Vitest",
+    "Vercel",
+    "Fastly",
+    "Grafana",
+    "Checkly",
+    "APIs",
+    "BFFs",
+    "Tech Design/Architecture",
+    "LogRocket",
+    "GTM",
+    "GA",
+    "Javascript",
+    "CSS",
+    "HTML",
+    "shadcn",
+    "SFCC",
+    "Stripe",
   ],
   preview: {
     blurb:
-      "Key contributor in replatforming a legacy SFCC e-commerce site to a modern, headless Next.js architecture using a strangler pattern for incremental, low-risk rollout.",
+      "Key contributor in a large-scale replatform from a legacy SFCC e-commerce site to a modern headless architecture using Next.js, Typescript, BFFs and strangler pattern for an incremental, low-risk rollout.",
     thumbnail: {
       src: pdpScreenShot.src,
       alt: "Screen shot of Hanna Andersson PDP on new tech stack",
@@ -32,7 +53,7 @@ export const haReplatform: Project = {
       "Maintained and refactored legacy jQuery/ISML MVC codebase while researching and helping guide the organization toward a superior, future-ready tech stack.",
     ],
     callouts: [
-      "An ongoing huge thank you to our Principal Engineer, Derek Dorr, who oversaw the project and is an endless well of wisdom and guidance. Working with you was a pivotal period for me.",
+      "An ongoing huge thank you to Derek Dorr, who oversaw the project as our Principal Engineer and is an endless well of wisdom and guidance.",
     ],
     livePage: {
       url: "https://www.hannaandersson.com/",
