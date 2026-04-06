@@ -12,7 +12,7 @@ type ProjectPreview = {
   thumbnail: { src: string; alt: string; height: number; width: number };
 };
 
-type Image = StaticImageData & {
+export type Image = StaticImageData & {
   alt: string;
 };
 
