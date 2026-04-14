@@ -1,6 +1,6 @@
-import Blurb from "./components/landing/Blurb";
-import ProjectOverview from "./components/landing/ProjectOverview";
-import Contact from "./components/landing/Contact";
+import Blurb from "./components/Landing/Blurb";
+import ProjectOverview from "./components/Projects/ProjectOverview";
+import Contact from "./components/Landing/Contact";
 
 export default function LandingPage() {
   return (

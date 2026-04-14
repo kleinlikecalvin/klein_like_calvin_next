@@ -1,5 +1,7 @@
-import ProjectOverviewCard from "../components/projects/ProjectOverviewCard";
+import ProjectOverviewCard from "../components/Projects/ProjectOverviewCard";
 import { projectsData } from "../data/projects/projectsData";
+
+// TODO: add pagination so we aren't loading a bunch of projects all at once
 
 export default function AllProjects() {
   return (
