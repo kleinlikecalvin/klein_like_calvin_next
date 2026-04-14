@@ -1,5 +1,5 @@
 import { projectsData } from "../../data/projects/projectsData";
-import ProjectOverviewCard from "../projects/ProjectOverviewCard";
+import ProjectOverviewCard from "./ProjectOverviewCard";
 
 export default function ProjectOverview() {
   return (
