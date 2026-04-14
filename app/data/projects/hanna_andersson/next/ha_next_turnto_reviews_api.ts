@@ -39,16 +39,15 @@ export const haTurnToReviews: Project = {
   },
   page: {
     achievements: [
-      "Identified a critical gap in project planning and independently developed the full tech design.",
+      "Delivered the entire feature — from architecture through production — as a solo effort, within 6 weeks, and with zero bugs reported since launch.",
+      "Identified critical gaps in project planning and independently developed the full tech design.",
       "Architected and implemented a custom TurnTo Reviews API integration from scratch, replacing their out-of-the-box widget with a fully bespoke solution.",
       "Engineered a composable Redux createAsyncThunk data-fetching layer that seamlessly handles simultaneous search, filter, and sort state, enabling complex query combinations like keyword search within filtered, sorted review subsets with zero edge case failures.",
-      "Built a star rating and size fit teaser above the fold that soft-scroll users to the reviews section, improving discoverability and on-page engagement",
-      "Developed a reviews quick view panel surfacing aggregate rating, total review count, star breakdown, a fit scale indicator, and a customer image carousel — all driven by live API data",
-      "Implemented full review querying capabilities including keyword search, multi-criteria filtering, and sort — all working in concert without conflicts.",
+      "Built a star rating and size fit teaser above the fold that soft-scroll users to the reviews section, improving discoverability and on-page engagement.",
+      "Developed a reviews quick view panel surfacing aggregate rating, total review count, star breakdown, a fit scale indicator, and a customer image carousel — all driven by live API data.",
       "Built a multi-step write-a-review modal form capturing structured inputs such as star rating, fit, quality, age, and children, with an integrated image upload flow that supports per-image captions before returning users to the form.",
-      "Implemented a deep-link review flow where email campaign links carrying star rating params and user data to auto-populate the write-a-review form on the target PDP, reducing friction for post-purchase review submission.",
+      "Implemented a deep-link review flow with email campaign links carrying star rating params and user data to auto-populate the write-a-review form on the target PDP, reducing friction for post-purchase review submission.",
       "Built a reusable image display modal triggered consistently across all review image interactions throughout the entire experience.",
-      "Delivered the entire feature — from architecture through production — as a solo effort, with zero bugs reported since launch.",
     ],
     livePage: {
       url: "https://www.hannaandersson.com/product/67501-011#TT-Reviews-Container",

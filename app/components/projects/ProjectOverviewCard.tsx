@@ -18,9 +18,9 @@ export default function ProjectOverviewCard({
     >
       <p className="special">{title}</p>
       {preview.thumbnail.src && (
-        <div className="image-container h-50 overflow-hidden border-b-special-one border-b">
+        <div className="image-container h-50 overflow-hidden border-b-special-one border-b ">
           <Image
-            className="w-full h-auto m-0 mx-auto"
+            className="w-full h-auto mx-auto"
             src={preview.thumbnail.src}
             alt={preview.thumbnail.alt}
             height={preview.thumbnail.height}
@@ -28,7 +28,7 @@ export default function ProjectOverviewCard({
           />
         </div>
       )}
-      <div className="info min-h-65 max-h-max pb-half border-b border-b-special-one">
+      <div className="info h-69 pb-half border-b border-b-special-one">
         <div className="skills">
           <p className="special">skills</p>
           <Skills skills={skills} />

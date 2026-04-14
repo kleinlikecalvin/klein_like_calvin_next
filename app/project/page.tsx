@@ -3,10 +3,11 @@
 import { useSearchParams } from "next/navigation";
 import { projectsData } from "../data/projects/projectsData";
 import MultiColorContainer from "../components/MultiColorContainer";
-import Skills from "../components/projects/Skills";
+import Skills from "../components/Projects/Skills";
 import Image from "next/image";
 import { Image as ImageType } from "../types/project_types";
 import Divider from "../components/Divider";
+import ImagesCarousel from "../components/Carousel/ImagesCarousel";
 
 export default function Project() {
   const searchParams = useSearchParams();
@@ -30,7 +31,12 @@ export default function Project() {
             <span>{role}</span>
           </p>
         </div>
-        <a href={page.livePage.url} className="live-page w-max h-max scale">
+        <a
+          href={page.livePage.url}
+          className="live-page w-max h-max scale"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           {page.livePage.displayText}
         </a>
       </section>
@@ -66,18 +72,13 @@ export default function Project() {
         </ul>
       </section>
       {images && images.length > 1 && (
-        <ul className="images-carousel">
-          {images.map((image: ImageType, i: number) => (
-            <li className="image" key={i}>
-              <Image
-                src={image.src}
-                alt={image.alt}
-                height={images[0].height}
-                width={images[0].width}
-              />
-            </li>
-          ))}
-        </ul>
+        <section>
+          <h3>Gallery</h3>
+          <ImagesCarousel
+            label={`${project.title} image carousel`}
+            images={images}
+          />
+        </section>
       )}
       {!!page.callouts && (
         <MultiColorContainer>
@@ -96,11 +97,13 @@ export default function Project() {
       {!!resources && (
         <section className="resources">
           <h3>Resources</h3>
-          {resources.map((resource, i) => (
-            <a href={resource.url} className="w-max inline-block" key={i}>
-              {resource.displayValue}
-            </a>
-          ))}
+          <div className="flex gap-5">
+            {resources.map((resource, i) => (
+              <a href={resource.url} className="w-max inline-block" key={i}>
+                {resource.displayValue}
+              </a>
+            ))}
+          </div>
         </section>
       )}
     </main>

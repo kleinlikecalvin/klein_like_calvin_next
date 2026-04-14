@@ -43,6 +43,7 @@ export const haReplatform: Project = {
   page: {
     achievements: [
       "Led front-end architectural decisions, introduced unit testing strategies, and drove tech debt remediation to reduce regressions and improve maintainability.",
+      "Significantly improved conversion KPIs and page load time on every migrated page.",
       "Designed and built high-performance, accessible UI components with React, Next.js, Tailwind, Redux, and BFF services, deployed via Vercel.",
       "Revamped core commerce flows (Product, Cart, Checkout), improving engagement, retention, and conversion rates.",
       "Authored comprehensive technical design docs, established an atomic design system, and created cross-functional documentation for long-term scalability.",

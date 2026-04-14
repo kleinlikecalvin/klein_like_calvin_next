@@ -36,6 +36,7 @@
   .special {
     font-family: var(--font-headers);
     font-weight: 900;
+    margin: 10px 0;
   }
 
   h1,
