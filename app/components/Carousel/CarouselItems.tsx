@@ -16,7 +16,7 @@ export default function CarouselItems({
       {images.map((image, i) => (
         <div
           key={i}
-          className="Item flex w-full max-h-[500] items-center shrink-0 overflow-hidden px-20"
+          className="Item flex w-full h-125 items-center shrink-0 overflow-hidden px-20"
           role="group"
           aria-roledescription="slide"
           aria-label={`Item ${i + 1} of ${images.length}`}
@@ -27,7 +27,7 @@ export default function CarouselItems({
             alt={image.alt}
             height={image.height}
             width={image.width}
-            className="mx-auto h-full w-auto"
+            className="mx-auto max-h-full w-auto"
           />
         </div>
       ))}
