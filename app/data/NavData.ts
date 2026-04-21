@@ -2,9 +2,9 @@ import { Link } from "../types/types";
 
 export const navData: Link[] = [
   {
-    id: "about",
-    displayValue: "about me",
-    link: "",
+    id: "home",
+    displayValue: "home",
+    link: "/",
   },
   {
     id: "projects",
