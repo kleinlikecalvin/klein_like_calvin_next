@@ -5,9 +5,11 @@ import Skills from "./Skills";
 export default function ProjectOverviewCard({
   project,
   classes,
+  position,
 }: {
   project: Project;
   classes?: string;
+  position?: number;
 }) {
   const { id, title, preview, skills, year, role } = project;
 
@@ -18,13 +20,14 @@ export default function ProjectOverviewCard({
     >
       <p className="special">{title}</p>
       {preview.thumbnail.src && (
-        <div className="image-container h-50 overflow-hidden border-b-special-one border-b ">
+        <div className="image-container h-50 overflow-hidden border-b-special-one border-b">
           <Image
             className="w-full h-auto mx-auto"
             src={preview.thumbnail.src}
             alt={preview.thumbnail.alt}
             height={preview.thumbnail.height}
             width={preview.thumbnail.width}
+            loading={position && position <= 1 ? "eager" : "lazy"}
           />
         </div>
       )}

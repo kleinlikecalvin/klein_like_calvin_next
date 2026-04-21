@@ -12,9 +12,9 @@ export default function Blurb() {
         <hr className="w-0.75 h-full bg-special-one m-0 border-none" />
         <p className="about text-foreground">
           I'm a software engineer who loves owning problems end-to-end — from
-          architecture and technical design all the way through to the thing
-          people actually use. I care about the details that make experiences
-          feel right, not just functional. When I'm not building, I'm painting,
+          architecture and technical design all the way through to the UI people
+          actually use. I care about the details that make experiences feel
+          right, not just functional. When I'm not building, I'm painting,
           playing drums, learning languages, or watching a great film.
         </p>
       </section>
