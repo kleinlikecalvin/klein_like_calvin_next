@@ -16,20 +16,6 @@ export default function DisplayModeToggle() {
     }
   }, [resolvedTheme]);
 
-  function handleDisplayModeToggleClick() {
-    if (resolvedTheme === "light") {
-      setTheme("dark");
-      return;
-    }
-
-    if (resolvedTheme === "dark") {
-      setTheme("light");
-      return;
-    }
-
-    setTheme("system");
-  }
-
   return (
     <div className="DisplayModeToggle flex items-center [&>p]:p-2.5">
       <p>light</p>
@@ -37,7 +23,9 @@ export default function DisplayModeToggle() {
         <input
           className="toggle peer w-full h-full"
           type="checkbox"
-          onClick={handleDisplayModeToggleClick}
+          onClick={() =>
+            resolvedTheme === "light" ? setTheme("dark") : setTheme("light")
+          }
         />
         <span
           ref={toggleRef}
