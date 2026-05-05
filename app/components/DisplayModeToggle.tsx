@@ -4,6 +4,8 @@ import clsx from "clsx";
 import { useTheme } from "next-themes";
 import { useRef, useEffect } from "react";
 
+// TODO: Resolve animation on navigation
+
 export default function DisplayModeToggle() {
   const { setTheme, resolvedTheme } = useTheme();
   const toggleRef = useRef<HTMLSpanElement>(null);

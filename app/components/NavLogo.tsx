@@ -3,6 +3,8 @@
 import { useTheme } from "next-themes";
 import { useEffect, useRef } from "react";
 
+// TODO: Resolve animation on navigation
+
 export default function NavLogo() {
   const { resolvedTheme } = useTheme();
   const logoRef = useRef<HTMLAnchorElement>(null);
