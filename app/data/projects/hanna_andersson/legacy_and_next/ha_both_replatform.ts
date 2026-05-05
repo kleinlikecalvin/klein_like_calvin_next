@@ -17,7 +17,7 @@ export const haReplatform: Project = {
     "Fastly",
     "Grafana",
     "Checkly",
-    "APIs",
+    "API Design & Integration",
     "BFFs",
     "Tech Design/Architecture",
     "LogRocket",

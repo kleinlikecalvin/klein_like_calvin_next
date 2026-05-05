@@ -10,6 +10,7 @@ export default function ProjectOverview() {
         })}
       </div>
       {projectsData.length > 2 && (
+        // TODO switch this to scale like the rest of them
         <a
           href="/all-projects"
           className="mt-11 text-lg font-medium text-center w-max mx-auto bg-background text-special-one hover:bg-special-one border-2 hover:text-background"
