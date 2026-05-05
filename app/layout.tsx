@@ -26,7 +26,7 @@ export default function RootLayout({
       <body
         className={`${merriweather.variable} m-0 text-base max-w-300 mt-40 mb-12.5 mx-auto antialiased`}
       >
-        <ThemeProvider attribute="class" enableSystem>
+        <ThemeProvider attribute="class">
           <Nav />
           {children}
         </ThemeProvider>
