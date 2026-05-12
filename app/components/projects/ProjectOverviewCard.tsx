@@ -17,6 +17,7 @@ export default function ProjectOverviewCard({
     <a
       href={`/project?id=${id}`}
       className={`ProjectOverviewCard rounded-[20px] p-half bg-background text-foreground scale ${classes}`}
+      aria-label="View full project details."
     >
       <p className="special">{title}</p>
       {preview.thumbnail.src && (

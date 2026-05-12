@@ -26,6 +26,7 @@ export default function NavLogo() {
       ref={logoRef}
       href="/"
       className="pseudo-logo transition-transform ease-in-out duration-300 text-3xl m-0 font-headers scale"
+      aria-label="Navigates to home page."
     >
       N. Klein
     </a>
