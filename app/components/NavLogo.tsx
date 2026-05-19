@@ -1,5 +1,3 @@
-"use client";
-
 import { useTheme } from "next-themes";
 import { useEffect, useRef } from "react";
 
@@ -25,7 +23,7 @@ export default function NavLogo() {
     <a
       ref={logoRef}
       href="/"
-      className="pseudo-logo transition-transform ease-in-out duration-300 text-3xl m-0 font-headers scale"
+      className="pseudo-logo font-headers scale m-0 w-fit text-xl transition-transform duration-300 ease-in-out lg:text-3xl"
       aria-label="Navigates to home page."
     >
       N. Klein

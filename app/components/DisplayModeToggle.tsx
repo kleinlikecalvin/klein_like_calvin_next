@@ -1,6 +1,5 @@
-"use client";
-
 import clsx from "clsx";
+import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useRef, useEffect } from "react";
 
@@ -19,11 +18,11 @@ export default function DisplayModeToggle() {
   }, [resolvedTheme]);
 
   return (
-    <div className="DisplayModeToggle flex items-center [&>p]:p-2.5">
-      <p>light</p>
-      <label className="relative inline-block w-12.5 h-6.5">
+    <div className="DisplayModeToggle flex items-center">
+      <Sun className="mr-1 lg:mr-3" />
+      <label className="relative inline-block h-6.5 w-12.5">
         <input
-          className="toggle peer w-full h-full"
+          className="toggle peer h-full w-full"
           type="checkbox"
           onClick={() =>
             resolvedTheme === "light" ? setTheme("dark") : setTheme("light")
@@ -32,11 +31,11 @@ export default function DisplayModeToggle() {
         <span
           ref={toggleRef}
           className={clsx(
-            "toggle-container absolute cursor-pointer top-0 left-0 right-0 bottom-0 rounded-[34px] bg-background duration-300 before:absolute before:content-[''] before:h-5 before:w-5 before:bg-special-two before:rounded-full before:left-0.75 before:translate-x-0 before:bottom-0.75 before:transition-transform",
+            "toggle-container bg-background before:bg-special-two absolute top-0 right-0 bottom-0 left-0 cursor-pointer rounded-[34px] duration-300 before:absolute before:bottom-0.75 before:left-0.75 before:h-5 before:w-5 before:translate-x-0 before:rounded-full before:transition-transform before:content-['']"
           )}
         ></span>
       </label>
-      <p>dark</p>
+      <Moon className="ml-1 lg:ml-3" />
     </div>
   );
 }
