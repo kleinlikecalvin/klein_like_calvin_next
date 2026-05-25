@@ -1,0 +1,27 @@
+import { Link } from "../types/types";
+import navData from "../data/NavData";
+import clsx from "clsx";
+
+export default function MobileNavMenu({ classes }: { classes?: string }) {
+  return (
+    <ul
+      className={clsx(
+        "MobileNavMenu from-special-one to-special-two m-0 flex items-center justify-center gap-2.5 overflow-hidden bg-linear-to-b transition-all duration-300 ease-in-out lg:hidden",
+        classes
+      )}
+    >
+      {navData.map(({ id, link, displayValue }: Link) => {
+        return (
+          <li key={id} className="link-item">
+            <a
+              href={link}
+              className="link text-background bg-transparent font-medium underline underline-offset-2"
+            >
+              {displayValue}
+            </a>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}

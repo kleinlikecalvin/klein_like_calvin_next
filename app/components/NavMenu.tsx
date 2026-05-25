@@ -1,15 +1,9 @@
 import { Link } from "../types/types";
 import navData from "../data/NavData";
-import clsx from "clsx";
 
-export default function NavMenu({ classes }: { classes?: string }) {
+export default function NavMenu() {
   return (
-    <ul
-      className={clsx(
-        "NavMenu m-0 items-center justify-center gap-2.5 p-0 lg:flex lg:h-auto lg:w-[40%]",
-        classes
-      )}
-    >
+    <ul className="NavMenu m-0 flex h-auto w-[40%] items-center justify-center gap-2.5 p-0 max-lg:hidden">
       {navData.map(({ id, link, displayValue }: Link) => {
         return (
           <li key={id} className="link-item p-2.5">
