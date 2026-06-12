@@ -9,7 +9,7 @@ export default function MobileNavTrigger({
 }) {
   return (
     <button
-      className="mobile-menu-trigger lg:hidden"
+      className="mobile-menu-trigger px-0 lg:hidden"
       aria-label={showMobileMenu ? "Open Menu." : "Close Menu."}
       onClick={onClick}
     >

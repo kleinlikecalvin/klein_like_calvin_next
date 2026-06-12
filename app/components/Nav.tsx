@@ -12,7 +12,7 @@ export default function Nav() {
 
   return (
     <nav className="Nav bg-special-one text-background fixed top-0 right-0 left-0 z-10 shadow-[0_0_50px_10px_var(--color-special-one)]">
-      <div className="pl-half pr-full flex items-center justify-between">
+      <div className="px-half flex items-center justify-between">
         <NavLogo />
         <MobileNavTrigger
           showMobileMenu={showMobileMenu}

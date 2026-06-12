@@ -20,7 +20,7 @@ export default function GreetingWriter() {
       } else {
         setDisplayedText("");
         setCurrentGreetingIndex(
-          (prevIndex) => (prevIndex + 1) % greetings.length,
+          (prevIndex) => (prevIndex + 1) % greetings.length
         );
       }
     }, SPEED);
@@ -29,9 +29,10 @@ export default function GreetingWriter() {
   }, [currentGreetingIndex]);
 
   return (
-    <span className="GreetingWriter block">
+    <h2 className="GreetingWriter max-md:text-2xl">
       <span>{displayedText}</span>
       <span className="blink">|</span>
-    </span>
+      <span className="special block">Nikki Klein</span>
+    </h2>
   );
 }

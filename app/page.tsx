@@ -10,11 +10,11 @@ export default function LandingPage() {
   ];
 
   return (
-    <main className="LandingPage w-full max-lg:mx-10 lg:grid lg:gap-12.5">
+    <main className="LandingPage mx-5 grid gap-12.5 lg:mx-0 lg:gap-20">
       <Blurb />
       {/* TODO figure out why the bg-color is slightly different in dark mode. Also spacing is off */}
-      <section className="skills multi-color-child flex items-center gap-4">
-        <h3>Skills</h3>
+      <section className="skills flex flex-col gap-4 lg:flex-row lg:items-center">
+        <h3>skills</h3>
         <Skills skills={allSkills} />
       </section>
       <ProjectOverview />

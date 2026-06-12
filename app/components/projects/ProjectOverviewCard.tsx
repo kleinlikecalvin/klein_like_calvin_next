@@ -16,14 +16,15 @@ export default function ProjectOverviewCard({
   return (
     <a
       href={`/project?id=${id}`}
-      className={`ProjectOverviewCard rounded-[20px] p-half bg-background text-foreground scale ${classes}`}
+      className={`ProjectOverviewCard p-half bg-background text-foreground scale rounded-[20px] ${classes}`}
       aria-label="View full project details."
     >
+      <p className="text-xs lg:hidden">tap to learn more</p>
       <p className="special">{title}</p>
       {preview.thumbnail.src && (
-        <div className="image-container h-50 overflow-hidden border-b-special-one border-b">
+        <div className="image-container border-b-special-one overflow-hidden border-b lg:h-50">
           <Image
-            className="w-full h-auto mx-auto"
+            className="mx-auto h-auto w-full"
             src={preview.thumbnail.src}
             alt={preview.thumbnail.alt}
             height={preview.thumbnail.height}
@@ -32,17 +33,17 @@ export default function ProjectOverviewCard({
           />
         </div>
       )}
-      <div className="info h-69 pb-half border-b border-b-special-one">
+      <div className="info pb-half border-b-special-one border-b lg:h-69">
         <div className="skills">
           <p className="special">skills</p>
           <Skills skills={skills} />
         </div>
-        <div className="blurb">
-          <p className="special">blurb</p>
-          <p className="blurb">{preview.blurb}</p>
+        <div className="tldr">
+          <p className="special">tldr</p>
+          <p className="tldr">{preview.tldr}</p>
         </div>
       </div>
-      <div className="stats h-20 flex gap-5 items-start justify-evenly text-center">
+      <div className="stats flex items-start justify-evenly gap-5 text-center lg:h-20">
         <div className="year stat">
           <p className="special">year</p>
           <p className="text-sm">{year}</p>

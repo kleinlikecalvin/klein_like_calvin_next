@@ -19,7 +19,7 @@ export default function DisplayModeToggle() {
 
   return (
     <div className="DisplayModeToggle flex items-center">
-      <Sun className="mr-3" />
+      <Sun className="mr-1" />
       <label className="relative inline-block h-6.5 w-12.5">
         <input
           className="toggle peer h-full w-full"
@@ -35,7 +35,7 @@ export default function DisplayModeToggle() {
           )}
         ></span>
       </label>
-      <Moon className="ml-3" />
+      <Moon className="ml-1" />
     </div>
   );
 }
