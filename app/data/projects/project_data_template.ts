@@ -13,7 +13,7 @@ export const projectName: Project = {
     },
   ],
   preview: {
-    blurb: "",
+    tldr: "",
     thumbnail: {
       src: "",
       alt: "",

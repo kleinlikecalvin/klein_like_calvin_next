@@ -10,8 +10,7 @@ export const ticTacToeAI: Project = {
   role: "Junior Front End Software Engineer",
   skills: ["Typescript", "React", "CSS", "HTML"],
   preview: {
-    blurb:
-      "A browser-based Tic-Tac-Toe game built with React, TypeScript, and useReducer, featuring an AI opponent that blocks player wins and pursues its own — falling back to random play when no immediate threat or opportunity exists.",
+    tldr: "A browser-based Tic-Tac-Toe game built with React, TypeScript, and useReducer, featuring an AI opponent that blocks player wins and pursues its own — falling back to random play when no immediate threat or opportunity exists.",
     thumbnail: {
       src: oWinsUI.src,
       alt: "Screenshot of a Tic Tac Toe app with a simple opponent where O has won",

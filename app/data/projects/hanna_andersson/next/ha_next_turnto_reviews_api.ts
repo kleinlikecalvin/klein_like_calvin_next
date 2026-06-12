@@ -35,8 +35,7 @@ export const haTurnToReviews: Project = {
     },
   ],
   preview: {
-    blurb:
-      "Architected and implemented a fully custom TurnTo Reviews integration from the ground up, owning the tech design, API architecture, and entire end-to-end user experience on the PDP.",
+    tldr: "Architected and implemented a fully custom TurnTo Reviews integration from the ground up, owning the tech design, API architecture, and entire end-to-end user experience on the PDP.",
     thumbnail: {
       src: turntoSection.src,
       alt: "Screenshot of the reviews section on a Hanna Andersson product display page",

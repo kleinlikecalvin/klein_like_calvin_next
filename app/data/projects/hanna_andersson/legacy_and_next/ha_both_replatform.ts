@@ -31,8 +31,7 @@ export const haReplatform: Project = {
     "Stripe",
   ],
   preview: {
-    blurb:
-      "Key contributor in a large-scale replatform from a legacy SFCC e-commerce site to a modern headless architecture using Next.js, Typescript, BFFs and strangler pattern for an incremental, low-risk rollout.",
+    tldr: "Key contributor in a large-scale replatform from a legacy SFCC e-commerce site to a modern headless architecture using Next.js, Typescript, BFFs and strangler pattern for an incremental, low-risk rollout.",
     thumbnail: {
       src: pdpScreenShot.src,
       alt: "Screen shot of Hanna Andersson PDP on new tech stack",

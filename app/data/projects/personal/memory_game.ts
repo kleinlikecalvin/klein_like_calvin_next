@@ -15,8 +15,7 @@ export const memoryGame: Project = {
     },
   ],
   preview: {
-    blurb:
-      "A React-based memory card game inspired by a Cash App interview challenge, using a reducer pattern to manage complex, event-driven game state. The project features card flipping, matching logic, and a clean, responsive UI designed to deliver a smooth and engaging gameplay experience.",
+    tldr: "A React-based memory card game inspired by a Cash App interview challenge, using a reducer pattern to manage complex, event-driven game state. The project features card flipping, matching logic, and a clean, responsive UI designed to deliver a smooth and engaging gameplay experience.",
     thumbnail: {
       src: memoryDefault.src,
       alt: "Memory Game",

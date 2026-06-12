@@ -14,8 +14,7 @@ export const numberGamble: Project = {
     },
   ],
   preview: {
-    blurb:
-      "Built a number-guessing game to strengthen my understanding of Promises and async/await, guided by an excellent tutorial from Thu Nghiem.",
+    tldr: "Built a number-guessing game to strengthen my understanding of Promises and async/await, guided by an excellent tutorial from Thu Nghiem.",
     thumbnail: {
       src: numberGambleStep1.src,
       alt: "Number Gamble game thumbnail",

@@ -8,7 +8,7 @@ type Resource = {
 };
 
 type ProjectPreview = {
-  blurb: string;
+  tldr: string;
   thumbnail: { src: string; alt: string; height: number; width: number };
 };
 

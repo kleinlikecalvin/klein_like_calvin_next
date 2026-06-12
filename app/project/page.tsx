@@ -33,7 +33,7 @@ export default function Project() {
         </div>
         <a
           href={page.livePage.url}
-          className="live-page w-max h-max scale"
+          className="live-page scale h-max w-max"
           target="_blank"
           rel="noreferrer noopener"
         >
@@ -41,9 +41,9 @@ export default function Project() {
         </a>
       </section>
       <MultiColorContainer>
-        <p className="blurb multi-color-child">
+        <p className="tldr multi-color-child">
           <span className="special">TLDR: </span>
-          {preview.blurb}
+          {preview.tldr}
         </p>
       </MultiColorContainer>
       {images && (
@@ -52,7 +52,7 @@ export default function Project() {
           alt={images[0].alt}
           height={images[0].height}
           width={images[0].width}
-          className="w-auto h-full max-h-125 m-auto"
+          className="m-auto h-full max-h-125 w-auto"
         />
       )}
       <MultiColorContainer>
@@ -99,7 +99,7 @@ export default function Project() {
           <h3>Resources</h3>
           <div className="flex gap-5">
             {resources.map((resource, i) => (
-              <a href={resource.url} className="w-max inline-block" key={i}>
+              <a href={resource.url} className="inline-block w-max" key={i}>
                 {resource.displayValue}
               </a>
             ))}

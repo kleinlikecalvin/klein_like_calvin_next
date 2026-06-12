@@ -8,8 +8,7 @@ export const templatesSuiteData: Project = {
   skills: ["Javascript, HTML, CSS"],
   resources: [],
   preview: {
-    blurb:
-      "This was one of my first endeavors as a junior dev at Hanna Andersson. I noticed that there were no 'how-to' guides for our non-technical partners who set up our suite of 50+ UI templates so I went through and created two dedicated pages with examples of how to use and wrote documentation for each template",
+    tldr: "This was one of my first endeavors as a junior dev at Hanna Andersson. I noticed that there were no 'how-to' guides for our non-technical partners who set up our suite of 50+ UI templates so I went through and created two dedicated pages with examples of how to use and wrote documentation for each template",
     thumbnail: {
       src: "",
       alt: "",

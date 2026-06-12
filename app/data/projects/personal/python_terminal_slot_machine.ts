@@ -30,8 +30,7 @@ export const pythonSlotMachine: Project = {
     },
   ],
   preview: {
-    blurb:
-      "A Vegas-style slot machine game in 100% Python, complete with ASCII art messages and interactive terminal gameplay. It handles betting, spins, payouts, and real-time balance tracking to deliver a fun, retro casino experience that celebrates every win.",
+    tldr: "A Vegas-style slot machine game in 100% Python, complete with ASCII art messages and interactive terminal gameplay. It handles betting, spins, payouts, and real-time balance tracking to deliver a fun, retro casino experience that celebrates every win.",
     thumbnail: {
       src: winnerScreenShot.src,
       alt: "Screenshot of slot machine winning spin",
