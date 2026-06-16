@@ -1,3 +1,5 @@
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
 export default function CarouselControls({
   prev,
   next,
@@ -6,21 +8,21 @@ export default function CarouselControls({
   next: () => void;
 }) {
   return (
-    <div className="CarouselControls absolute top-0 h-full w-full flex items-center justify-between pointer-events-none px-4">
+    <div className="CarouselControls pointer-events-none absolute top-0 flex h-full w-full items-center justify-between border px-4">
       <button
         onClick={prev}
-        className="pointer-events-auto bg-accent-two/50 text-accent-two px-3 py-1 rounded focus:ring"
+        className="bg-accent-two/50 text-accent-two pointer-events-auto rounded px-3 py-1 focus:ring"
         aria-label="Previous slide"
       >
-        ‹
+        <ChevronLeft />
       </button>
 
       <button
         onClick={next}
-        className="pointer-events-auto bg-accent-two/50 text-accent-two px-3 py-1 rounded focus:ring"
+        className="bg-accent-two/50 text-accent-two pointer-events-auto rounded px-3 py-1 focus:ring"
         aria-label="Next slide"
       >
-        ›
+        <ChevronRight />
       </button>
     </div>
   );

@@ -10,13 +10,13 @@ export default function CarouselItems({
 }) {
   return (
     <div
-      className="CarouselItems flex transition-transform duration-500 ease-in-out items-center"
+      className="CarouselItems flex items-center border transition-transform duration-500 ease-in-out"
       style={{ transform: `translateX(-${current * 100}%)` }}
     >
       {images.map((image, i) => (
         <div
           key={i}
-          className="Item flex w-full h-125 items-center shrink-0 overflow-hidden px-20"
+          className="Item flex h-125 w-full shrink-0 items-center overflow-hidden px-20"
           role="group"
           aria-roledescription="slide"
           aria-label={`Item ${i + 1} of ${images.length}`}

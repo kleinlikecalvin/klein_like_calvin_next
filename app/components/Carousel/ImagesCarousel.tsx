@@ -44,7 +44,7 @@ export default function ImagesCarousel({ images, label }: CarouselProps) {
   return (
     <div
       ref={containerRef}
-      className="ImagesCarousel relative mx-auto overflow-hidden"
+      className="ImagesCarousel relative mx-auto overflow-hidden border"
       role="region"
       aria-roledescription="carousel"
       aria-label={label}

@@ -11,7 +11,7 @@ export default function CarouselDots({
   goTo: (i: number) => void;
 }) {
   return (
-    <div className="CarouselDots py-4 w-full flex justify-center gap-2">
+    <div className="CarouselDots flex w-full justify-center gap-2 border py-4">
       {images.map((_, i) => (
         <button
           key={i}
