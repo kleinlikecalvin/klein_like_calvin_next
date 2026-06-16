@@ -33,7 +33,7 @@ export const ticTacToeAI: Project = {
     ],
     livePage: {
       url: "https://github.com/kleinlikecalvin/tic-tac-toe",
-      displayText: "Visit repo and play the game",
+      displayText: "Visit repo to play the game",
     },
   },
   images: [
