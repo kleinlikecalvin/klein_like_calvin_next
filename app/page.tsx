@@ -14,7 +14,7 @@ export default function LandingPage() {
       <Blurb />
       {/* TODO figure out why the bg-color is slightly different in dark mode. Also spacing is off */}
       <section className="skills flex flex-col gap-4 lg:flex-row lg:items-center">
-        <h3>skills</h3>
+        <h3 className="m-0">skills</h3>
         <Skills skills={allSkills} />
       </section>
       <ProjectOverview />

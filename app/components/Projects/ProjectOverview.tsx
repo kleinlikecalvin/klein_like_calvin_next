@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { projectsData } from "../../data/projects/projectsData";
 import ProjectOverviewCard from "./ProjectOverviewCard";
 
@@ -11,12 +12,12 @@ export default function ProjectOverview() {
       </div>
       {projectsData.length > 2 && (
         // TODO switch this to scale like the rest of them
-        <a
+        <Link
           href="/all-projects"
-          className="bg-background text-special-one hover:bg-special-one hover:text-background mx-auto mt-11 w-max border-2 text-center text-lg font-medium"
+          className="bg-background scale text-special-one mx-auto mt-11 w-max border-2 text-center text-lg font-bold"
         >
           view more projects
-        </a>
+        </Link>
       )}
     </section>
   );

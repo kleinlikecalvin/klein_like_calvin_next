@@ -1,6 +1,7 @@
 import { Project } from "@/app/types/project_types";
 import Image from "next/image";
 import Skills from "./Skills";
+import Link from "next/link";
 
 export default function ProjectOverviewCard({
   project,
@@ -14,7 +15,7 @@ export default function ProjectOverviewCard({
   const { id, title, preview, skills, year, role } = project;
 
   return (
-    <a
+    <Link
       href={`/project?id=${id}`}
       className={`ProjectOverviewCard p-half bg-background text-foreground scale rounded-[20px] ${classes}`}
       aria-label="View full project details."
@@ -22,7 +23,7 @@ export default function ProjectOverviewCard({
       <p className="text-xs lg:hidden">tap to learn more</p>
       <p className="special">{title}</p>
       {preview.thumbnail.src && (
-        <div className="image-container border-b-special-one overflow-hidden border-b lg:h-50">
+        <div className="image-container border-special-one overflow-hidden border lg:h-50">
           <Image
             className="mx-auto h-auto w-full"
             src={preview.thumbnail.src}
@@ -33,7 +34,7 @@ export default function ProjectOverviewCard({
           />
         </div>
       )}
-      <div className="info pb-half border-b-special-one border-b lg:h-69">
+      <div className="info pb-half border-b-special-one border-b lg:h-72">
         <div className="skills">
           <p className="special">skills</p>
           <Skills skills={skills} />
@@ -43,16 +44,16 @@ export default function ProjectOverviewCard({
           <p className="tldr">{preview.tldr}</p>
         </div>
       </div>
-      <div className="stats flex items-start justify-evenly gap-5 text-center lg:h-20">
-        <div className="year stat">
+      <div className="stats flex items-start justify-evenly gap-5 lg:h-20 lg:flex-row lg:text-center">
+        <div className="year">
           <p className="special">year</p>
           <p className="text-sm">{year}</p>
         </div>
-        <div className="role stat">
+        <div className="role max-lg:flex-1">
           <p className="special">role</p>
-          <p>{role}</p>
+          <p className="text-sm">{role}</p>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
