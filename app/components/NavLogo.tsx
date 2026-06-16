@@ -1,4 +1,5 @@
 import { useTheme } from "next-themes";
+import Link from "next/link";
 import { useEffect, useRef } from "react";
 
 /**
@@ -24,13 +25,13 @@ export default function NavLogo() {
   }, [resolvedTheme]);
 
   return (
-    <a
+    <Link
       ref={logoRef}
       href="/"
-      className="NavLogo font-headers lg:scale m-0 w-fit text-xl transition-transform duration-300 ease-in-out max-md:p-0 lg:text-3xl"
+      className="NavLogo font-headers scale m-0 w-fit text-xl transition-transform duration-300 ease-in-out max-md:p-0 lg:text-3xl"
       aria-label="Navigates to home page."
     >
       N. Klein
-    </a>
+    </Link>
   );
 }

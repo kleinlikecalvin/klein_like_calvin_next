@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { contactInfoData } from "../../data/landing/contact_info";
 import MultiColorContainer from "../MultiColorContainer";
 
@@ -9,7 +10,7 @@ export default function Contact() {
         <div className="links-container flex flex-col items-center justify-center gap-5 p-5 text-center lg:flex-row">
           {contactInfoData.map((obj) => {
             return (
-              <a
+              <Link
                 href={obj.url}
                 className="button-link scale w-37.5 font-bold"
                 target="_blank"
@@ -17,7 +18,7 @@ export default function Contact() {
                 key={obj.displayValue}
               >
                 {obj.displayValue}
-              </a>
+              </Link>
             );
           })}
         </div>
