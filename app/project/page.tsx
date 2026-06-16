@@ -8,6 +8,7 @@ import Image from "next/image";
 import { Image as ImageType } from "../types/project_types";
 import Divider from "../components/Divider";
 import ImagesCarousel from "../components/Carousel/ImagesCarousel";
+import Link from "next/link";
 
 export default function Project() {
   const searchParams = useSearchParams();
@@ -21,8 +22,8 @@ export default function Project() {
     project;
 
   return (
-    <main className="Project flex flex-col gap-10">
-      <section className="header flex justify-between">
+    <main className="Project mx-5 flex flex-col gap-10 lg:mx-0">
+      <section className="header flex flex-col-reverse justify-between max-lg:gap-4 lg:flex-row">
         <div className="details">
           <h1 className="title">{title}</h1>
           <p className="year-role">
@@ -31,45 +32,14 @@ export default function Project() {
             <span>{role}</span>
           </p>
         </div>
-        <a
+        <Link
           href={page.livePage.url}
-          className="live-page scale h-max w-max"
+          className="live-page scale h-max w-max max-lg:text-sm max-lg:font-bold max-lg:underline max-lg:underline-offset-2"
           target="_blank"
           rel="noreferrer noopener"
         >
           {page.livePage.displayText}
-        </a>
-      </section>
-      <MultiColorContainer>
-        <p className="tldr multi-color-child">
-          <span className="special">TLDR: </span>
-          {preview.tldr}
-        </p>
-      </MultiColorContainer>
-      {images && (
-        <Image
-          src={images[0].src}
-          alt={images[0].alt}
-          height={images[0].height}
-          width={images[0].width}
-          className="m-auto h-full max-h-125 w-auto"
-        />
-      )}
-      <MultiColorContainer>
-        <section className="skills multi-color-child flex items-center gap-4">
-          <h3>Skills</h3>
-          <Skills skills={skills} />
-        </section>
-      </MultiColorContainer>
-      <section>
-        <h3>Achievements</h3>
-        <ul className="achievements list-inside list-disc">
-          {page.achievements.map((achievement, i) => (
-            <li key={i} className="py-1">
-              {achievement}
-            </li>
-          ))}
-        </ul>
+        </Link>
       </section>
       {images && images.length > 1 && (
         <section>
@@ -80,28 +50,48 @@ export default function Project() {
           />
         </section>
       )}
+      <p className="tldr">
+        <span className="special">TLDR: </span>
+        {preview.tldr}
+      </p>
+      <MultiColorContainer>
+        <section className="skills multi-color-child flex flex-col gap-2 lg:flex-row lg:items-center lg:gap-4">
+          <h3>Skills</h3>
+          <Skills skills={skills} />
+        </section>
+      </MultiColorContainer>
+      <MultiColorContainer>
+        <section className="multi-color-child">
+          <h3>Achievements</h3>
+          <ul className="achievements list-inside list-disc">
+            {page.achievements.map((achievement, i) => (
+              <li key={i} className="py-3">
+                {achievement}
+              </li>
+            ))}
+          </ul>
+        </section>
+      </MultiColorContainer>
       {!!page.callouts && (
-        <MultiColorContainer>
-          <section className="callouts multi-color-child">
-            <h3>Callouts</h3>
-            <ul className="list-inside list-disc">
-              {page.callouts.map((callout, i) => (
-                <li key={i} className="py-1">
-                  {callout}
-                </li>
-              ))}
-            </ul>
-          </section>
-        </MultiColorContainer>
+        <section className="callouts">
+          <h3>Callouts</h3>
+          <ul className="list-inside list-disc">
+            {page.callouts.map((callout, i) => (
+              <li key={i} className="py-3">
+                {callout}
+              </li>
+            ))}
+          </ul>
+        </section>
       )}
       {!!resources && (
         <section className="resources">
           <h3>Resources</h3>
           <div className="flex gap-5">
             {resources.map((resource, i) => (
-              <a href={resource.url} className="inline-block w-max" key={i}>
+              <Link href={resource.url} className="inline-block w-max" key={i}>
                 {resource.displayValue}
-              </a>
+              </Link>
             ))}
           </div>
         </section>
