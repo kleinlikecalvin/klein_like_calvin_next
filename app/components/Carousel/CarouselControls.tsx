@@ -8,7 +8,7 @@ export default function CarouselControls({
   next: () => void;
 }) {
   return (
-    <div className="CarouselControls pointer-events-none absolute top-0 flex h-full w-full items-center justify-between border px-4">
+    <div className="CarouselControls pointer-events-none absolute top-3 flex items-center justify-between max-lg:right-0 max-lg:gap-4 lg:top-0 lg:h-full lg:w-full lg:px-4">
       <button
         onClick={prev}
         className="bg-accent-two/50 text-accent-two pointer-events-auto rounded px-3 py-1 focus:ring"

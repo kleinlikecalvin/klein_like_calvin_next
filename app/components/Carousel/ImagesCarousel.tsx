@@ -9,11 +9,16 @@ import { Image } from "@/app/types/project_types";
 type CarouselProps = {
   images: Image[];
   label: string;
+  title: string;
 };
 
-// TODO: mobile UI, controls together in top right corner
+// TODO: mobile UI, controls together in top right corner, QA for accessibility, maybe consider adding a tap to expand feature for mobile
 
-export default function ImagesCarousel({ images, label }: CarouselProps) {
+export default function ImagesCarousel({
+  images,
+  label,
+  title,
+}: CarouselProps) {
   const [current, setCurrent] = useState(0);
   const length = images.length;
   const containerRef = useRef<HTMLDivElement>(null);
@@ -44,21 +49,23 @@ export default function ImagesCarousel({ images, label }: CarouselProps) {
   return (
     <div
       ref={containerRef}
-      className="ImagesCarousel relative mx-auto overflow-hidden border"
+      className="ImagesCarousel relative mx-auto overflow-hidden"
       role="region"
       aria-roledescription="carousel"
       aria-label={label}
       tabIndex={0}
       onKeyDown={handleKeyDown}
     >
+      <h3>{title}</h3>
+
       {/* Live region for announcements */}
       <div className="sr-only" aria-live="polite">
         {`Slide ${current + 1} of ${length}`}
       </div>
 
-      <CarouselItems current={current} images={images} />
-
       <CarouselControls prev={prev} next={next} />
+
+      <CarouselItems current={current} images={images} />
 
       <CarouselDots current={current} images={images} goTo={goTo} />
     </div>
