@@ -57,7 +57,7 @@ export const haTurnToReviews: Project = {
     ],
     livePage: {
       url: "https://www.hannaandersson.com/product/67501-011#TT-Reviews-Container",
-      displayText: "See Hanna Andersson PDP Reviews Section",
+      displayText: "Visit Live Site",
     },
   },
   images: [
