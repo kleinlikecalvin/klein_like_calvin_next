@@ -7,6 +7,7 @@ import Skills from "../components/Projects/Skills";
 import Divider from "../components/Divider";
 import ImagesCarousel from "../components/Carousel/ImagesCarousel";
 import Link from "next/link";
+import WavyDivider from "../components/WavyDivider";
 
 export default function Project() {
   const searchParams = useSearchParams();
@@ -22,7 +23,7 @@ export default function Project() {
 
   return (
     <main className="Project mx-5 flex flex-col gap-12 lg:mx-0 lg:gap-20">
-      <section className="header flex flex-col justify-between max-lg:gap-6 lg:flex-row">
+      <section className="header flex flex-col justify-between gap-6 lg:flex-row">
         <div className="details">
           <h1 className="title">{title}</h1>
           <p className="year-role text-lg lg:text-2xl">
@@ -33,23 +34,24 @@ export default function Project() {
         </div>
         <Link
           href={page.livePage.url}
-          className="live-page scale border-accent-two text-accent-two hover:bg-accent-two w-fit border-2 bg-transparent font-bold hover:text-white max-lg:underline max-lg:underline-offset-2 lg:w-max"
+          className="live-page scale border-accent-two text-accent-two hover:bg-accent-two hover:text-background h-fit w-fit border-2 bg-transparent font-bold max-lg:underline max-lg:underline-offset-2"
           target="_blank"
           rel="noreferrer noopener"
         >
           {page.livePage.displayText}
         </Link>
       </section>
-      <MultiColorContainer>
-        <section className="skills multi-color-child flex flex-col gap-2 lg:flex-row lg:items-center lg:gap-4">
-          <h3>Skills</h3>
-          <Skills skills={skills} />
-        </section>
-      </MultiColorContainer>
+      <WavyDivider />
       <p className="tldr">
         <span className="special">TLDR: </span>
         {preview.tldr}
       </p>
+      <MultiColorContainer>
+        <section className="skills multi-color-child flex flex-col gap-2 lg:flex-row lg:items-center lg:gap-4">
+          <h3>skills</h3>
+          <Skills skills={skills} />
+        </section>
+      </MultiColorContainer>
       {images && images.length > 1 && (
         <section>
           <ImagesCarousel
