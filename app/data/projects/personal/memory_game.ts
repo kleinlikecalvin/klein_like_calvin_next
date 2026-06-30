@@ -35,7 +35,7 @@ export const memoryGame: Project = {
     ],
     livePage: {
       url: "https://github.com/kleinlikecalvin/memory-game-interview-challenge",
-      displayText: "See repo and play the game",
+      displayText: "Visit Repo To Play",
     },
   },
   images: [

@@ -29,7 +29,7 @@ export const numberGamble: Project = {
     ],
     livePage: {
       url: "https://github.com/kleinlikecalvin/numberGamble",
-      displayText: "Visit repo to play the game",
+      displayText: "Visit Repo To Play",
     },
   },
   images: [

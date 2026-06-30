@@ -57,7 +57,7 @@ export const haReplatform: Project = {
     ],
     livePage: {
       url: "https://www.hannaandersson.com/",
-      displayText: "Visit Hanna Andersson Site",
+      displayText: "Visit Live Site",
     },
   },
   images: [

@@ -51,7 +51,7 @@ export const pythonSlotMachine: Project = {
     ],
     livePage: {
       url: "https://github.com/kleinlikecalvin/python_p1--slot-machine",
-      displayText: "Visit repo",
+      displayText: "Visit Repo",
     },
   },
   images: [
