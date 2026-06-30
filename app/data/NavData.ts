@@ -13,7 +13,7 @@ export const navData: Link[] = [
   },
   {
     id: "skills",
-    displayValue: "skills",
+    displayValue: "TODO",
     link: "/#skills",
   },
 ];
