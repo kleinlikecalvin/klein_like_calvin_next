@@ -19,7 +19,7 @@ export type Image = StaticImageData & {
 type ProjectPage = {
   achievements: string[];
   callouts?: string[];
-  livePage: {
+  livePage?: {
     url: string;
     displayText: "Visit Live Site" | "Visit Repo To Play" | "Visit Repo";
   };

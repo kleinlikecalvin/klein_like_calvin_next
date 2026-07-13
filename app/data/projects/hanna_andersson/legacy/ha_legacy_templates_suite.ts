@@ -19,10 +19,10 @@ export const templatesSuiteData: Project = {
   page: {
     achievements: [],
     callouts: [],
-    livePage: {
-      url: "",
-      displayText: "",
-    },
+    // livePage: {
+    //   url: "",
+    //   displayText: "",
+    // },
   },
   //   images: [
   //     {

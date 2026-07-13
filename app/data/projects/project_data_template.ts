@@ -24,10 +24,10 @@ export const projectName: Project = {
   page: {
     achievements: [""],
     callouts: [""],
-    livePage: {
-      url: "",
-      displayText: "",
-    },
+    // livePage: {
+    //   url: "",
+    //   displayText: undefined,
+    // },
   },
   images: [
     {
