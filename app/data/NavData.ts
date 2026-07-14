@@ -11,11 +11,6 @@ export const navData: Link[] = [
     displayValue: "all projects",
     link: "/all-projects",
   },
-  {
-    id: "skills",
-    displayValue: "TODO",
-    link: "/#skills",
-  },
 ];
-// TODO: where does skills link take user?
+
 export default navData;
