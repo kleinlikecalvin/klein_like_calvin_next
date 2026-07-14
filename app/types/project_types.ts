@@ -2,11 +2,6 @@
 
 import { StaticImageData } from "next/image";
 
-type Resource = {
-  displayValue: string;
-  url: string;
-};
-
 type ProjectPreview = {
   tldr: string;
   thumbnail: { src: string; alt: string; height: number; width: number };
@@ -31,7 +26,6 @@ export type Project = {
   year: string;
   role: string;
   skills: string[];
-  resources?: Resource[];
   preview: ProjectPreview;
   page: ProjectPage;
   images?: Image[];

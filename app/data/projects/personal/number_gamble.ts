@@ -7,12 +7,6 @@ export const numberGamble: Project = {
   year: "2022",
   role: "Freelance Front End Web Developer",
   skills: ["Javascript", "HTML"],
-  resources: [
-    {
-      displayValue: "Youtube",
-      url: "https://www.youtube.com/watch?v=J29jeuyMJ38&t=1s",
-    },
-  ],
   preview: {
     tldr: "Built a number-guessing game to strengthen my understanding of Promises and async/await, guided by an excellent tutorial from Thu Nghiem.",
     thumbnail: {

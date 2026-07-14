@@ -8,12 +8,6 @@ export const memoryGame: Project = {
   year: "2023",
   role: "Junior Front End Software Engineer",
   skills: ["React", "Javascript", "CSS", "HTML"],
-  resources: [
-    {
-      displayValue: "Nathan Walston",
-      url: "https://github.com/walston",
-    },
-  ],
   preview: {
     tldr: "A React-based memory card game inspired by a Cash App interview challenge, using a reducer pattern to manage complex, event-driven game state. The project features card flipping, matching logic, and a clean, responsive UI designed to deliver a smooth and engaging gameplay experience.",
     thumbnail: {
@@ -32,6 +26,7 @@ export const memoryGame: Project = {
     ],
     callouts: [
       "Huge thank you to Cash App for the opportunity to interview, it's stuck with me ever since.",
+      "Big thanks to Nathan Walston, my mentor at the time, for helping me.",
     ],
     livePage: {
       url: "https://github.com/kleinlikecalvin/memory-game-interview-challenge",

@@ -7,28 +7,6 @@ export const pythonSlotMachine: Project = {
   year: "2025",
   role: "Full Stack Software Engineer",
   skills: ["Python"],
-  resources: [
-    {
-      displayValue: "ASCII Art Library",
-      url: "https://pypi.org/project/art/",
-    },
-    {
-      displayValue: "ASCII Art Font List",
-      url: "https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb",
-    },
-    {
-      displayValue: "pip package",
-      url: "https://pypi.org/project/pip/",
-    },
-    {
-      displayValue: "How to get user input",
-      url: "https://www.w3schools.com/python/python_user_input.asp",
-    },
-    {
-      displayValue: "Choosing a Python environment in VS Code",
-      url: "https://code.visualstudio.com/docs/python/environments",
-    },
-  ],
   preview: {
     tldr: "A Vegas-style slot machine game in 100% Python, complete with ASCII art messages and interactive terminal gameplay. It handles betting, spins, payouts, and real-time balance tracking to deliver a fun, retro casino experience that celebrates every win.",
     thumbnail: {

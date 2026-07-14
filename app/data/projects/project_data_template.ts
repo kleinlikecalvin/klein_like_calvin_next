@@ -6,12 +6,7 @@ export const projectName: Project = {
   year: "",
   role: "",
   skills: [""],
-  resources: [
-    {
-      displayValue: "",
-      url: "",
-    },
-  ],
+
   preview: {
     tldr: "",
     thumbnail: {

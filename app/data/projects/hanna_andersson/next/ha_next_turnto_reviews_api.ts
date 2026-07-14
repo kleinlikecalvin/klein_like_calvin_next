@@ -24,16 +24,6 @@ export const haTurnToReviews: Project = {
     "Tailwind",
     "API Design & Integration",
   ],
-  resources: [
-    {
-      displayValue: "TurnTo Review API Documentation",
-      url: "https://developers.turnto.com/index-v1.0.html#reviews",
-    },
-    {
-      displayValue: "Redux createAsyncThunk Documentation",
-      url: "https://redux-toolkit.js.org/api/createAsyncThunk",
-    },
-  ],
   preview: {
     tldr: "Architected and implemented a fully custom TurnTo Reviews integration from the ground up, owning the tech design, API architecture, and entire end-to-end user experience on the PDP.",
     thumbnail: {
