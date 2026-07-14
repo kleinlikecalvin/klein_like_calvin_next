@@ -34,12 +34,12 @@ export default function ProjectOverviewCard({
           />
         </div>
       )}
-      <div className="info pb-half border-b-special-one border-b lg:h-72">
-        <div className="skills">
+      <div className="info pb-half border-b-special-one border-b">
+        <div className="skills lg:h-36">
           <p className="special">skills</p>
           <Skills skills={skills} />
         </div>
-        <div className="tldr">
+        <div className="tldr lg:h-42">
           <p className="special">tldr</p>
           <p className="tldr">{preview.tldr}</p>
         </div>

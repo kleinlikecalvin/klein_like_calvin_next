@@ -5,7 +5,7 @@ import { projectsData } from "../data/projects/projectsData";
 
 export default function AllProjects() {
   return (
-    <main className="AllProjects mx-5 grid grid-cols-1 gap-10 lg:mx-0 lg:grid-cols-2">
+    <main className="AllProjects grid grid-cols-1 gap-10 lg:grid-cols-2">
       {projectsData.map((project, i) => {
         return (
           <ProjectOverviewCard
