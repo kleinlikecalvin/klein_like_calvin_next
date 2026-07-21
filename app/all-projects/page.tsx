@@ -16,6 +16,7 @@ export default function AllProjects() {
           />
         );
       })}
+      <button className="load-more">load more</button>
     </main>
   );
 }
