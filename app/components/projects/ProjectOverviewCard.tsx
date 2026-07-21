@@ -17,13 +17,13 @@ export default function ProjectOverviewCard({
   return (
     <Link
       href={`/project?id=${id}`}
-      className={`ProjectOverviewCard p-half bg-background text-foreground scale rounded-[20px] ${classes}`}
+      className={`ProjectOverviewCard p-half bg-background text-foreground scale group rounded-[20px] group-hover:cursor-pointer ${classes}`}
       aria-label="View full project details."
     >
       <p className="text-xs lg:hidden">tap to learn more</p>
-      <p className="special">{title}</p>
+      <p className="special hover:cursor-pointer">{title}</p>
       {preview.thumbnail.src && (
-        <div className="image-container border-special-one overflow-hidden border lg:h-50">
+        <div className="image-container border-special-one h-40 overflow-hidden border lg:h-50">
           <Image
             className="mx-auto h-auto w-full"
             src={preview.thumbnail.src}
