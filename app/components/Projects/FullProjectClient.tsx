@@ -14,9 +14,14 @@ export default function FullProjectClient() {
   const id = searchParams.get("id") || "";
   const project = projectsData.find((project) => project.id === id);
 
-  // TODO: Not found UI, maybe customize the bullet points, QA all project CTA display text - there is room for more
+  // TODO: maybe customize the bullet points, QA all project CTA display text
 
-  if (!project) return;
+  if (!project)
+    return (
+      <main className="text-center">
+        <h1>🧙🏼‍♀️ Sorry, I couldn't find the project that you seek.</h1>
+      </main>
+    );
 
   const { title, year, role, images, skills, page, preview } = project;
 
@@ -43,10 +48,10 @@ export default function FullProjectClient() {
         )}
       </section>
       <MultiColorContainer>
-        <p className="tldr multi-color-child">
+        <div className="tldr multi-color-child">
           <h3>TLDR </h3>
-          {preview.tldr}
-        </p>
+          <p>{preview.tldr}</p>
+        </div>
       </MultiColorContainer>
       <WavyDivider />
       <section className="skills">
@@ -65,7 +70,7 @@ export default function FullProjectClient() {
           </section>
         </>
       )}
-      <WavyDivider />
+
       <section>
         <h3>Achievements</h3>
         <ul className="achievements list-inside list-disc">
@@ -76,8 +81,6 @@ export default function FullProjectClient() {
           ))}
         </ul>
       </section>
-      <WavyDivider />
-
       {!!page.callouts && (
         <>
           <section className="callouts">
@@ -90,7 +93,6 @@ export default function FullProjectClient() {
               ))}
             </ul>
           </section>
-          <WavyDivider />
         </>
       )}
     </main>
