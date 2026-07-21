@@ -75,7 +75,6 @@
     }
   }
 
-  /* TODO: maybe there's a better way to do this or at least use a var */
   .scale {
     transition: transform 0.3s ease;
     @media (min-width: 1080px) {

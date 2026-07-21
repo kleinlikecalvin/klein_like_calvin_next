@@ -12,7 +12,7 @@ const eslintConfig = defineConfig([
     "next/typescript",
     "plugin:jsx-a11y/recommended",
     "plugin:security/recommended-legacy",
-    "next",
+    "next"
   ),
   {
     plugins: {
@@ -51,7 +51,6 @@ const eslintConfig = defineConfig([
 
       // disallow the use of alert, confirm, and prompt
       // https://eslint.org/docs/rules/no-alert
-      // TODO: enable, semver-major - LEO-758
       "no-alert": "warn",
 
       // disallow use of arguments.caller or arguments.callee
