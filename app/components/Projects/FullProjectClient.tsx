@@ -39,7 +39,7 @@ export default function FullProjectClient() {
         {page?.livePage && (
           <Link
             href={page.livePage.url}
-            className="live-page scale border-accent-two text-accent-two hover:bg-accent-two hover:text-background h-fit w-fit border-2 bg-transparent font-bold max-lg:underline max-lg:underline-offset-2"
+            className="live-page scale border-accent-two text-accent-two hover:bg-accent-two hover:text-background h-fit w-fit border-2 bg-transparent max-lg:underline max-lg:underline-offset-2"
             target="_blank"
             rel="noreferrer noopener"
           >

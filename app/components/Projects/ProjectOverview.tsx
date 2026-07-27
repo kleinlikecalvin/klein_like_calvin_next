@@ -13,7 +13,7 @@ export default function ProjectOverview() {
       {projectsData.length > 2 && (
         <Link
           href="/all-projects"
-          className="button-link scale mx-auto mt-5 w-max font-bold lg:mt-11"
+          className="scale mx-auto mt-5 w-max lg:mt-11"
         >
           view more projects
         </Link>

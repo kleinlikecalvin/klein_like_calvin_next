@@ -17,7 +17,7 @@ export default function ProjectOverviewCard({
   return (
     <Link
       href={`/project?id=${id}`}
-      className={`ProjectOverviewCard p-half bg-background text-foreground scale group rounded-[20px] group-hover:cursor-pointer ${classes}`}
+      className={`ProjectOverviewCard p-half bg-background text-foreground scale group rounded-[20px] font-normal group-hover:cursor-pointer ${classes}`}
       aria-label="View full project details."
     >
       <p className="text-xs lg:hidden">tap to learn more</p>
