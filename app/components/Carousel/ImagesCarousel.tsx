@@ -12,7 +12,7 @@ type CarouselProps = {
   title: string;
 };
 
-// TODO: mobile UI, controls together in top right corner, QA for accessibility, maybe consider adding a tap to expand feature for mobile
+// TODO: QA for accessibility, maybe consider adding a tap to expand feature for mobile
 
 export default function ImagesCarousel({
   images,

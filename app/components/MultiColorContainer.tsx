@@ -1,7 +1,5 @@
 import { ReactNode } from "react";
 
-// TODO: might need to refactor for consistent effect on mobile. Thinking that scale and hover should just be default on mobile.
-
 export default function MultiColorContainer({
   children,
 }: {
