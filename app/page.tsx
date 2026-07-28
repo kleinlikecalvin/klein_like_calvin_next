@@ -2,7 +2,7 @@ import Blurb from "./components/Landing/Blurb";
 import ProjectOverview from "./components/Projects/ProjectOverview";
 import Contact from "./components/Landing/Contact";
 import Skills from "./components/Projects/Skills";
-import { projectsData } from "./data/projects/projectsData";
+import { projectsData } from "./data/projects/projects_data";
 import WavyDivider from "./components/WavyDivider";
 
 export default function LandingPage() {

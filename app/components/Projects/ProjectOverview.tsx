@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { projectsData } from "../../data/projects/projectsData";
+import { projectsData } from "../../data/projects/projects_data";
 import ProjectOverviewCard from "./ProjectOverviewCard";
 
 export default function ProjectOverview() {

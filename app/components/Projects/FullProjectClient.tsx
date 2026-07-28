@@ -1,6 +1,6 @@
 "use client";
 
-import { projectsData } from "@/app/data/projects/projectsData";
+import { projectsData } from "@/app/data/projects/projects_data";
 import { useSearchParams } from "next/navigation";
 import Divider from "../Divider";
 import Link from "next/link";

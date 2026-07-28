@@ -1,5 +1,5 @@
-import { Link as LinkType } from "../types/types";
-import navData from "../data/NavData";
+import { Link as LinkType } from "../../types/types";
+import navData from "../../data/nav_data";
 import Link from "next/link";
 
 export default function NavMenu() {

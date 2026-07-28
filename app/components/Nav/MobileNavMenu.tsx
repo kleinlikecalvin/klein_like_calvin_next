@@ -1,5 +1,5 @@
-import { Link as LinkType } from "../types/types";
-import navData from "../data/NavData";
+import { Link as LinkType } from "@/app/types/types";
+import navData from "@/app/data/nav_data";
 import clsx from "clsx";
 import Link from "next/link";
 

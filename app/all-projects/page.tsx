@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import ProjectOverviewCard from "../components/Projects/ProjectOverviewCard";
-import { projectsData } from "../data/projects/projectsData";
+import { projectsData } from "../data/projects/projects_data";
 import { Project } from "../types/project_types";
 
 export default function AllProjects() {

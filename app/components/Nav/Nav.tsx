@@ -1,10 +1,10 @@
 "use client";
 
-import NavMenu from "./NavMenu";
-import DisplayModeToggle from "./DisplayModeToggle";
+import { useState } from "react";
 import NavLogo from "./NavLogo";
 import MobileNavTrigger from "./MobileNavTrigger";
-import { useState } from "react";
+import DisplayModeToggle from "../DisplayModeToggle";
+import NavMenu from "./NavMenu";
 import MobileNavMenu from "./MobileNavMenu";
 
 export default function Nav() {
