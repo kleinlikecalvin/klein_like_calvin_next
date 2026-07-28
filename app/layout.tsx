@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Merriweather } from "next/font/google";
-import Nav from "./components/Nav";
+import Nav from "./components/Nav/Nav";
 import { ThemeProvider } from "next-themes";
+import { metaData as meta } from "./data/meta_data";
+import Footer from "./components/Footer/Footer";
 
 export const metadata: Metadata = {
-  title: "Nikki Klein | Software Engineer - Portfolio",
-  description:
-    "A software engineer who loves owning problems end-to-end — from architecture and technical design all the way through to the UI people actually use. I care about the details that make experiences feel right, not just functional. When I'm not building, I'm painting, playing drums, learning languages, or watching a great film.",
+  title: meta.title,
+  description: meta.description,
 };
 
 const merriweather = Merriweather({
@@ -29,6 +30,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class">
           <Nav />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
