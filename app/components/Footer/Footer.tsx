@@ -1,3 +1,7 @@
 export default function Footer() {
-  return <footer>This site is created and maintained by Nikki Klein 👩🏻‍💻</footer>;
+  return (
+    <footer className="mt-10 text-center">
+      <p>This site is created and maintained by Nikki Klein 👩🏻‍💻</p>
+    </footer>
+  );
 }
