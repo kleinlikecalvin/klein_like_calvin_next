@@ -10,7 +10,7 @@ export const ticTacToeAI: Project = {
   role: "Junior Front End Software Engineer",
   skills: ["Typescript", "React", "CSS", "HTML"],
   preview: {
-    tldr: "A browser-based Tic-Tac-Toe game built with React, TypeScript, and useReducer, featuring an AI opponent that blocks player wins and pursues its own — falling back to random play when no immediate threat or opportunity exists.",
+    tldr: "A browser-based Tic-Tac-Toe game built with React, TypeScript, and useReducer, featuring an AI opponent that blocks player wins and pursues its own, falling back to random play when no immediate threat or opportunity exists.",
     thumbnail: {
       src: oWinsUI.src,
       alt: "Screenshot of a Tic Tac Toe app with a simple opponent where O has won",
@@ -22,7 +22,7 @@ export const ticTacToeAI: Project = {
     achievements: [
       "Built a fully playable Tic-Tac-Toe game using React and TypeScript.",
       "Implemented game state management with useReducer and a custom useAppState hook.",
-      "Developed an AI opponent with greedy move selection — prioritizing winning moves, then blocking the player, then playing randomly.",
+      "Developed an AI opponent with greedy move selection, prioritizing winning moves, then blocking the player, then playing randomly.",
       "Highlighted winning squares on game end using derived state from the reducer.",
       "Handled draw detection and dynamic UI messaging based on game state.",
       "Simulated opponent 'thinking' with a 500ms async delay using a Promise-based wait utility.",

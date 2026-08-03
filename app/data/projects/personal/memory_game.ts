@@ -22,7 +22,7 @@ export const memoryGame: Project = {
       "Using an interview prompt from Cash App, I rebuilt the memory game on my own time and used it as a way to deepen my understanding of state management in React.",
       "Implemented shuffling logic, card-flipping behavior, and match detection while managing all gameplay transitions with a reducer pattern, allowing me to practice structuring complex, event-driven state in a clean, scalable way.",
       "Designed a simple, responsive UI and focused on how the game feels to play, ensuring that interactions were intuitive and transitions made sense.",
-      "Treated this project as an opportunity to grow — both in React fundamentals and in more advanced patterns like reducers — while turning an interview challenge into a polished, functioning game.",
+      "Treated this project as an opportunity to grow both in React fundamentals and in more advanced patterns, like reducers, while turning an interview challenge into a polished, functioning game.",
     ],
     callouts: [
       "Huge thank you to Cash App for the opportunity to interview, it's stuck with me ever since.",

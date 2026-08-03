@@ -18,12 +18,12 @@ export const pythonSlotMachine: Project = {
   },
   page: {
     achievements: [
-      "Built a complete, interactive game using only Python — demonstrating rapid learning, self-direction, and the ability to turn an idea into a working product.",
+      "Built a complete, interactive game using only Python. Demonstrating rapid learning, self-direction, and the ability to turn an idea into a working product.",
       "Implemented real game logic, including betting, spinning, winning conditions, and payouts, showing a solid grasp of control flow, functions, and program structure.",
-      "Created a functioning state-management system to track player balance, validate bets, and handle game progression — a core concept in real software systems.",
+      "Created a functioning state-management system to track player balance, validate bets, and handle game progression (a core concept in real software systems).",
       "Designed a fully text-based user interface with clear prompts and ASCII visuals, proving the ability to think about user experience even without GUI frameworks.",
       "Applied randomness and probability concepts to simulate slot machine behavior, illustrating practical use of Python’s standard libraries.",
-      "Handled user input safely and cleanly, including error handling and input validation — a fundamental skill for any interactive application.",
+      "Handled user input safely and cleanly, including error handling and input validation, a fundamental skill for any interactive application.",
       "Organized code into reusable, readable functions, showing mastery of clean-code principles.",
       "Debugged and iterated on the game to ensure smooth play, reflecting strong problem-solving and resilience for a beginner.",
     ],
