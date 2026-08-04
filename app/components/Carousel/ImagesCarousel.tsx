@@ -12,7 +12,7 @@ type CarouselProps = {
   title: string;
 };
 
-// TODO: QA for accessibility, maybe consider adding a tap to expand feature for mobile
+// TODO: maybe consider adding a tap to expand feature for mobile
 
 export default function ImagesCarousel({
   images,
@@ -56,7 +56,7 @@ export default function ImagesCarousel({
       tabIndex={0}
       onKeyDown={handleKeyDown}
     >
-      <h3>{title}</h3>
+      <h2>{title}</h2>
 
       {/* Live region for announcements */}
       <div className="sr-only" aria-live="polite">

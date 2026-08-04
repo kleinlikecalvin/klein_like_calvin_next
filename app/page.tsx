@@ -11,11 +11,11 @@ export default function LandingPage() {
   ];
 
   return (
-    <main className="LandingPage grid gap-12.5">
+    <main className="LandingPage page grid gap-12.5">
       <Blurb />
       <WavyDivider />
       <section className="skills-container text-center">
-        <h3>I've got skills.</h3>
+        <h2>I've got skills.</h2>
         <Skills skills={allSkills} />
       </section>
       <WavyDivider />

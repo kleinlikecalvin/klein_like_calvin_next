@@ -3,8 +3,6 @@ import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useRef, useEffect } from "react";
 
-// TODO: Resolve animation on navigation
-
 export default function DisplayModeToggle() {
   const { setTheme, resolvedTheme } = useTheme();
   const toggleRef = useRef<HTMLSpanElement>(null);
@@ -24,6 +22,7 @@ export default function DisplayModeToggle() {
         <input
           className="toggle peer h-full w-full"
           type="checkbox"
+          aria-label="Toggle display mode from light to dark or vice versa."
           onClick={() =>
             resolvedTheme === "light" ? setTheme("dark") : setTheme("light")
           }

@@ -16,6 +16,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noreferrer noopener"
                 key={obj.displayValue}
+                aria-label="Opens in a new tab."
               >
                 {obj.displayValue}
               </Link>

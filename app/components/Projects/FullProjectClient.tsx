@@ -14,8 +14,6 @@ export default function FullProjectClient() {
   const id = searchParams.get("id") || "";
   const project = projectsData.find((project) => project.id === id);
 
-  // TODO: maybe customize the bullet points, QA all project CTA display text
-
   if (!project)
     return (
       <main className="text-center">
@@ -26,7 +24,7 @@ export default function FullProjectClient() {
   const { title, year, role, images, skills, page, preview } = project;
 
   return (
-    <main className="Project flex flex-col gap-12">
+    <main className="Project page flex flex-col gap-12">
       <section className="header flex flex-col justify-between gap-6 lg:flex-row">
         <div className="details">
           <h1 className="title">{title}</h1>
@@ -42,6 +40,7 @@ export default function FullProjectClient() {
             className="live-page scale border-accent-two text-accent-two hover:bg-accent-two hover:text-background h-fit w-fit border-2 bg-transparent max-lg:underline max-lg:underline-offset-2"
             target="_blank"
             rel="noreferrer noopener"
+            aria-label="Opens in new tab."
           >
             {page.livePage.displayText}
           </Link>
@@ -49,13 +48,13 @@ export default function FullProjectClient() {
       </section>
       <MultiColorContainer>
         <div className="tldr multi-color-child">
-          <h3>TLDR </h3>
+          <h2>TLDR </h2>
           <p>{preview.tldr}</p>
         </div>
       </MultiColorContainer>
       <WavyDivider />
       <section className="skills">
-        <h3>Skills</h3>
+        <h2>Skills</h2>
         <Skills skills={skills} />
       </section>
       <WavyDivider />
@@ -72,7 +71,7 @@ export default function FullProjectClient() {
       )}
 
       <section>
-        <h3>Achievements</h3>
+        <h2>Achievements</h2>
         <ul className="achievements list-inside list-disc">
           {page.achievements.map((achievement, i) => (
             <li key={i} className="py-3">
@@ -84,7 +83,7 @@ export default function FullProjectClient() {
       {!!page.callouts && (
         <>
           <section className="callouts">
-            <h3>Callouts</h3>
+            <h2>Callouts</h2>
             <ul className="list-inside list-disc">
               {page.callouts.map((callout, i) => (
                 <li key={i} className="py-3">

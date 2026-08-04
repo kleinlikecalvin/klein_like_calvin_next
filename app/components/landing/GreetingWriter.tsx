@@ -29,10 +29,10 @@ export default function GreetingWriter() {
   }, [currentGreetingIndex]);
 
   return (
-    <h2 className="GreetingWriter max-md:text-2xl">
+    <h1 className="GreetingWriter max-md:text-2xl">
       <span>{displayedText}</span>
       <span className="blink">|</span>
       <span className="special block">Nikki Klein</span>
-    </h2>
+    </h1>
   );
 }
