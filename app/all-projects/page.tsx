@@ -16,7 +16,8 @@ export default function AllProjects() {
   }
 
   return (
-    <main className="AllProjects">
+    <main className="AllProjects page">
+      <h1 className="mb-10">All Projects</h1>
       <div className="project-container grid grid-cols-1 gap-10 lg:grid-cols-2">
         {projects.map((project, i) => {
           return (
@@ -29,12 +30,14 @@ export default function AllProjects() {
           );
         })}
       </div>
-      <button
-        className="load-more scale mx-auto my-10"
-        onClick={getNextFourProjects}
-      >
-        load more
-      </button>
+      {projects.length !== projectsData.length && (
+        <button
+          className="load-more scale mx-auto my-10"
+          onClick={getNextFourProjects}
+        >
+          load more
+        </button>
+      )}
     </main>
   );
 }
