@@ -2,12 +2,6 @@ import { useTheme } from "next-themes";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 
-/**
- * TODO:
- * Resolve animation on navigation.
- * Remove scale from mobile (confirm the change already made)
- * */
-
 export default function NavLogo() {
   const { resolvedTheme } = useTheme();
   const logoRef = useRef<HTMLAnchorElement>(null);
