@@ -51,15 +51,15 @@
   }
 
   h1 {
-    font-size: 2.5rem;
-  }
-
-  h2 {
     font-size: 2rem;
   }
 
-  h3 {
+  h2 {
     font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
   }
 
   a,
@@ -96,5 +96,13 @@
     background-color: var(--color-background);
     border-radius: 30px;
     padding: var(--padding-half);
+  }
+  .page {
+    max-width: 1200px;
+    margin: 144px auto 0;
+    @media (max-width: 1080px) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
   }
 }

@@ -24,9 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${merriweather.variable} m-0 mx-5 mt-36 mb-12.5 max-w-300 text-base antialiased lg:mx-auto`}
-      >
+      <body className={`${merriweather.variable} text-base antialiased`}>
         <ThemeProvider attribute="class">
           <Nav />
           {children}
