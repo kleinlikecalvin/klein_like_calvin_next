@@ -5,7 +5,7 @@ export const pythonSlotMachine: Project = {
   id: "pythonSlotMachine",
   title: "Python Slot Machine Game",
   year: "2025",
-  role: "Full Stack Software Engineer",
+  role: "Front End Software Engineer",
   skills: ["Python"],
   preview: {
     tldr: "A Vegas-style slot machine game in 100% Python, complete with ASCII art messages and interactive terminal gameplay. It handles betting, spins, payouts, and real-time balance tracking to deliver a fun, retro casino experience that celebrates every win.",

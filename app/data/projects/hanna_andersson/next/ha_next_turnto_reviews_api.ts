@@ -15,7 +15,7 @@ export const haTurnToReviews: Project = {
   id: "haTurnToReviews",
   title: "TurnTo Reviews API",
   year: "2025",
-  role: "Full Stack Software Engineer",
+  role: "Front End Software Engineer",
   skills: [
     "React",
     "Next.js",

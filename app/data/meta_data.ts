@@ -1,5 +1,5 @@
 export const metaData = {
   title: "Nikki Klein | Front End Software Engineer Portfolio",
   description:
-    "Full-stack engineer with a frontend specialty, passionate about accessible, conversion-critical user experiences and growing my full-stack depth. Experienced contributing to a large-scale platform migration, defining frontend architecture, and delivering end-to-end features using React, Next.js, and TypeScript. Collaborative, documentation-focused, and looking to grow with a mission-driven team.",
+    "Front end engineer with a track record of championing a large-scale architectural migration, driving technical design decisions, and delivering measurable business impact through performance and UX improvements. Experienced mentoring teammates, championing accessibility, and partnering cross-functionally with product and design. Comfortable owning ambiguity and driving a technical roadmap independently.",
 };
