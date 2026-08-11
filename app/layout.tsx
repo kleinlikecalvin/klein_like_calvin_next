@@ -6,6 +6,7 @@ import { ThemeProvider } from "next-themes";
 import { metaData as meta } from "./data/meta_data";
 import Footer from "./components/Footer/Footer";
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   title: meta.title,
@@ -31,6 +32,7 @@ export default function RootLayout({
           {children}
           <Footer />
           <Analytics/>
+          <SpeedInsights />
         </ThemeProvider>
       </body>
     </html>
