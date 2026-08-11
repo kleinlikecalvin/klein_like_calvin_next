@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <MultiColorContainer>
       <section className="Contact multi-color-child flex flex-col items-center justify-evenly gap-5 lg:flex-row">
-        <h2>Follow me</h2>
+        <h2>I've got links.</h2>
         <div className="links-container flex flex-col items-center justify-center gap-5 p-5 text-center lg:flex-row">
           {contactInfoData.map((obj) => {
             return (

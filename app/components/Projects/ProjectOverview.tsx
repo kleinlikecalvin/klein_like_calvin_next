@@ -4,7 +4,8 @@ import ProjectOverviewCard from "./ProjectOverviewCard";
 
 export default function ProjectOverview() {
   return (
-    <section className="ProjectOverview bg-accent-two rounded-3xl p-5 lg:rounded-[38px] lg:px-10 lg:py-11">
+    <section className="ProjectOverview bg-accent-two rounded-3xl p-5 lg:rounded-[38px] lg:p-10 flex flex-col gap-5 lg:gap-11">
+      <h2 className="text-background text-center m-0">I've got projects.</h2>
       <div className="cards-container grid grid-cols-1 gap-5 lg:grid-cols-2 lg:gap-10">
         {projectsData.slice(0, 2).map((project) => {
           return <ProjectOverviewCard project={project} key={project.id} />;
@@ -13,7 +14,7 @@ export default function ProjectOverview() {
       {projectsData.length > 2 && (
         <Link
           href="/all-projects"
-          className="scale mx-auto mt-5 w-max lg:mt-11"
+          className="scale mx-auto w-max"
         >
           view more projects
         </Link>
