@@ -5,7 +5,7 @@ export const haReplatform: Project = {
   id: "haReplatform",
   title: "Hanna Andersson Replatform",
   year: "2026", // 🚨 TODO: update either when leaving Hanna or when completely on SOTF
-  role: "Full Stack Software Engineer",
+  role: "Front End Software Engineer",
   skills: [
     "React",
     "Redux",
