@@ -5,6 +5,7 @@ import Nav from "./components/Nav/Nav";
 import { ThemeProvider } from "next-themes";
 import { metaData as meta } from "./data/meta_data";
 import Footer from "./components/Footer/Footer";
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
   title: meta.title,
@@ -29,6 +30,7 @@ export default function RootLayout({
           <Nav />
           {children}
           <Footer />
+          <Analytics/>
         </ThemeProvider>
       </body>
     </html>
