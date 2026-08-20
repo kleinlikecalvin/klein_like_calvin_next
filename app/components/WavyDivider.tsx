@@ -4,7 +4,7 @@ export default function WavyDivider({ color }: { color?: string }) {
   return (
     <div className="WavyDivider w-full overflow-hidden">
       <svg
-        className={clsx("h-8", color || "text-special-one")}
+        className={clsx("h-8", color || "text-main-one")}
         viewBox="0 0 700 12"
         preserveAspectRatio="none"
         fill="none"

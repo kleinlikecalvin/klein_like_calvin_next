@@ -23,7 +23,7 @@ export default function ProjectOverviewCard({
       <p className="text-xs lg:hidden">tap to learn more</p>
       <p className="special hover:cursor-pointer">{title}</p>
       {preview.thumbnail.src && (
-        <div className="image-container border-special-one h-40 overflow-hidden border lg:h-50">
+        <div className="image-container border-main-one mb-4 h-40 overflow-hidden border lg:h-50">
           <Image
             className="mx-auto h-auto w-full"
             src={preview.thumbnail.src}
@@ -34,13 +34,13 @@ export default function ProjectOverviewCard({
           />
         </div>
       )}
-      <div className="info pb-half border-b-special-one border-b">
+      <div className="info pb-half border-b-main-one border-b">
         <div className="skills lg:h-36">
-          <p className="special">skills</p>
+          <p className="special mb-0">skills</p>
           <Skills skills={skills} />
         </div>
         <div className="tldr lg:h-42">
-          <p className="special">tldr</p>
+          <p className="special mb-0">tldr</p>
           <p className="tldr">{preview.tldr}</p>
         </div>
       </div>

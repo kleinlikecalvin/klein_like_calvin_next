@@ -8,8 +8,8 @@
   /* LIGHT MODE COLOR PALETTE */
   --color-background: #fffdfa;
   --color-foreground: #212121;
-  --color-special-one: #3319b4;
-  --color-special-two: #0b62c8;
+  --color-main-one: #3319b4;
+  --color-main-two: #0b62c8;
   --color-accent-one: #3d93f5;
   --color-accent-two: #654be7;
 
@@ -23,8 +23,8 @@
   /* DARK MODE COLOR PALETTE */
   --color-background: #212121;
   --color-foreground: #fffdfa;
-  --color-special-one: #cce64b;
-  --color-special-two: #f49d37;
+  --color-main-one: #cce64b;
+  --color-main-two: #f49d37;
   --color-accent-one: #c26c0a;
   --color-accent-two: #9ab418;
 }
@@ -42,11 +42,11 @@
   h1,
   h2,
   h3 {
-    color: var(--color-special-one);
+    color: var(--color-main-one);
   }
 
   .special {
-    color: var(--color-special-two);
+    color: var(--color-main-two);
     margin: 10px auto;
   }
 
@@ -66,7 +66,7 @@
   button {
     text-decoration: none;
     display: block;
-    background-color: var(--color-special-one);
+    background-color: var(--color-main-one);
     color: var(--color-background);
     border-radius: 20px;
     padding: 20px;
