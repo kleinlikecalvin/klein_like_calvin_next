@@ -11,7 +11,7 @@ export default function Nav() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   return (
-    <nav className="Nav bg-special-one text-background fixed top-0 right-0 left-0 z-10 shadow-[0_0_50px_10px_var(--color-special-one)]">
+    <nav className="Nav bg-main-one text-background fixed top-0 right-0 left-0 z-10 shadow-[0_0_50px_10px_var(--color-main-one)]">
       <div className="px-half lg:pr-full flex items-center justify-between">
         <NavLogo />
         <MobileNavTrigger

@@ -7,7 +7,7 @@ export default function MobileNavMenu({ classes }: { classes?: string }) {
   return (
     <ul
       className={clsx(
-        "MobileNavMenu from-special-one to-special-two m-0 flex items-center justify-center gap-2.5 overflow-hidden bg-linear-to-b transition-all duration-300 ease-in-out lg:hidden",
+        "MobileNavMenu from-main-one to-main-two m-0 flex items-center justify-center gap-2.5 overflow-hidden bg-linear-to-b transition-all duration-300 ease-in-out lg:hidden",
         classes
       )}
     >

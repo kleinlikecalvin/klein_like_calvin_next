@@ -30,7 +30,7 @@ export default function DisplayModeToggle() {
         <span
           ref={toggleRef}
           className={clsx(
-            "toggle-container bg-background before:bg-special-two absolute top-0 right-0 bottom-0 left-0 cursor-pointer rounded-[34px] duration-300 before:absolute before:bottom-0.75 before:left-0.75 before:h-5 before:w-5 before:translate-x-0 before:rounded-full before:transition-transform before:content-['']"
+            "toggle-container bg-background before:bg-main-two absolute top-0 right-0 bottom-0 left-0 cursor-pointer rounded-[34px] duration-300 before:absolute before:bottom-0.75 before:left-0.75 before:h-5 before:w-5 before:translate-x-0 before:rounded-full before:transition-transform before:content-['']"
           )}
         ></span>
       </label>
